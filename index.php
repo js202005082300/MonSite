@@ -1,5 +1,9 @@
 <?php
 
+echo '<pre>';
+print_r($_POST);
+echo '</pre>';
+
 $dsn = 'mysql:host=localhost;dbname=u870391923_MyDB';
 $username = 'u870391923_root';
 $password = 'o8jtuHhZPmLXiVUZoj';
