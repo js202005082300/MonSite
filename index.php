@@ -14,19 +14,21 @@ if($conn){;}
 $response=array();
 
 if(isset($_POST['success']) && !empty($_POST['success']))
-    if(isset($_POST['temperature']) && !empty($_POST['temperature']))
-        if(isset($_POST['humidity']) && !empty($_POST['humidity']))
-        {
-            $temperature = $_POST["temperature"];
-            $humidity = $_POST["humidity"];
-            $success = $_POST["success"];
-            //return;
-            $sql="INSERT INTO table_dht(dht_success, dht_temperature, dht_humidity)
-            VALUES ('$success', '$temperature', '$humidity')";
+    if(isset($_POST['temp01']) && !empty($_POST['temp01']))
+        if(isset($_POST['hum01']) && !empty($_POST['hum01']))
+            if(isset($_POST['temp02']) && !empty($_POST['temp02']))
+                if(isset($_POST['hum02']) && !empty($_POST['hum02']))
+                {
+                    $temperature = $_POST["temp01"];
+                    $humidity = $_POST["hum01"];
+                    $success = $_POST["success"];
+                    //return;
+                    $sql="INSERT INTO table_dht(dht_success, dht_temperature, dht_humidity)
+                    VALUES ('$success', '$temperature', '$humidity')";
 
-            try{$conn->query($sql);}
-            catch(Exception $pe){echo $pe->getMessage();}
-        }
+                    try{$conn->query($sql);}
+                    catch(Exception $pe){echo $pe->getMessage();}
+                }
 
 $conn=null;
 ?>
