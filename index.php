@@ -22,16 +22,16 @@ if(isset($_POST['success']) && !empty($_POST['success']))
                     $temp01 = $_POST["temp01"];
                     $hum01 = $_POST["hum01"];
                     $success = $_POST["success"];
-                    $sql="INSERT INTO table_dht(dht_success, dht_temperature, dht_humidity, dht_name, dht_location)
+                    $sql01="INSERT INTO table_dht(dht_success, dht_temperature, dht_humidity, dht_name, dht_location)
                     VALUES ('$success', '$temp01', '$humidity', 'DHT11_PIN2', 'x')";
 
                     $temp02 = $_POST["temp02"];
                     $hum02 = $_POST["hum02"];
                     $success = $_POST["success"];
-                    $sql="INSERT INTO table_dht(dht_success, dht_temperature, dht_humidity, dht_name, dht_location)
+                    $sql02="INSERT INTO table_dht(dht_success, dht_temperature, dht_humidity, dht_name, dht_location)
                     VALUES ('$success', '$temp02', '$hum02', 'DHT11_PIN3', 'x')";
 
-                    try{$conn->query($sql);}
+                    try{$conn->query($sql01);$conn->query($sql02);}
                     catch(Exception $pe){echo $pe->getMessage();}
                 }
 
