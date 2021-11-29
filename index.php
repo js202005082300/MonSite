@@ -2,6 +2,11 @@
 require 'Database.php';
 
 date_default_timezone_set('Europe/Brussels');
+
+echo '<pre>';
+print_r($_POST);
+echo '<pre>';
+
 ?>
 
 <?php
