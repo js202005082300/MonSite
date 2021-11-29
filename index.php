@@ -49,7 +49,7 @@ $conn=null;
 
     <main class="item">
         <section>
-            <h1>Page de collecte de données sur https://www.samueljacquet.be</h1>
+            <h1>Page de collecte de données</h1>
             <div>
                 <h2>Données DHT</h2>
                 <table cellspacing="5" cellpadding="5">
