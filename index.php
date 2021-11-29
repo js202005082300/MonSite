@@ -2,11 +2,6 @@
 require 'Database.php';
 
 date_default_timezone_set('Europe/Brussels');
-
-echo '<pre>';
-print_r($_POST);
-echo '<pre>';
-
 ?>
 
 <?php
@@ -24,12 +19,17 @@ if(isset($_POST['success']) && !empty($_POST['success']))
             if(isset($_POST['temp02']) && !empty($_POST['temp02']))
                 if(isset($_POST['hum02']) && !empty($_POST['hum02']))
                 {
-                    $temperature = $_POST["temp01"];
-                    $humidity = $_POST["hum01"];
+                    $temp01 = $_POST["temp01"];
+                    $hum01 = $_POST["hum01"];
                     $success = $_POST["success"];
-                    //return;
-                    $sql="INSERT INTO table_dht(dht_success, dht_temperature, dht_humidity)
-                    VALUES ('$success', '$temperature', '$humidity')";
+                    $sql="INSERT INTO table_dht(dht_success, dht_temperature, dht_humidity, dht_name, dht_location)
+                    VALUES ('$success', '$temp01', '$humidity', 'DHT11_PIN2', 'x')";
+
+                    $temp02 = $_POST["temp02"];
+                    $hum02 = $_POST["hum02"];
+                    $success = $_POST["success"];
+                    $sql="INSERT INTO table_dht(dht_success, dht_temperature, dht_humidity, dht_name, dht_location)
+                    VALUES ('$success', '$temp02', '$hum02', 'DHT11_PIN3', 'x')";
 
                     try{$conn->query($sql);}
                     catch(Exception $pe){echo $pe->getMessage();}
@@ -59,7 +59,8 @@ $conn=null;
                 <h2>Données DHT</h2>
                 <table cellspacing="5" cellpadding="5">
                     <tr> 
-                        <td>DATE</td> 
+                        <td>DATE</td>
+                        <td>NAME</td>
                         <td>HUMIDITY</td> 
                         <td>TEMPERATURE</td> 
                         <td>SUCCESS</td> 
@@ -69,12 +70,14 @@ $conn=null;
                         foreach($dht_sql as $row):
                             $row_id = $row['id_dht'];
                             $row_date = $row['dht_date'];
+                            $row_name = $row['dht_name'];
                             $row_humidity = $row['dht_humidity'];
                             $row_temperature = $row['dht_temperature'];
                             $row_success = $row['dht_success'];
-                            $row_date = date("Y-m-d H:i:s", strtotime("$row_date"));
+                            $row_date = date("Y-m-d H:i:s");
                             echo '<tr>
                             <td>'.$row_date.'</td>
+                            <td>'.$row_name.'</td>
                             <td>'.$row_humidity.'</td>
                             <td>'.$row_temperature.'</td>
                             <td>'.$row_success.'</td>
