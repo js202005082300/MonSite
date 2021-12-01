@@ -1,6 +1,8 @@
 <?php
 require '../Database/Database.php';
 
+date_default_timezone_set('Europe/Brussels');
+
 if(isset($_POST) && !empty($_POST))
 {    
     $fields = [

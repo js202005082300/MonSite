@@ -2,6 +2,8 @@
 require 'Database/Database.php';
 require 'util.php';
 
+date_default_timezone_set('Europe/Brussels');
+
 init_php_session();
 $attempt_failed = 0;
 
