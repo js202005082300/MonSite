@@ -1,41 +1,40 @@
 <?php
-require 'Database.php';
+require 'Database/Database.php';
+require 'util.php';
 
-date_default_timezone_set('Europe/Brussels');
-?>
+init_php_session();
+$attempt_failed = 0;
 
-<?php
-$dsn = 'mysql:host=localhost;dbname=u870391923_MyDB';
-$username = 'u870391923_root';
-$password = 'o8jtuHhZPmLXiVUZoj';
-try{$conn = new PDO($dsn, $username, $password);}
-catch(PDOException $pe){echo $pe->getMessage();}
-if($conn){;}
-$response=array();
+if(isset($_GET['action']) && !empty($_GET['action'] && $_GET['action'] == "logout"))
+{
+    clean_php_session();
+    header('Location: index.php');
+}
 
-if(isset($_POST['success']) && !empty($_POST['success']))
-    if(isset($_POST['temp01']) && !empty($_POST['temp01']))
-        if(isset($_POST['hum01']) && !empty($_POST['hum01']))
-            if(isset($_POST['temp02']) && !empty($_POST['temp02']))
-                if(isset($_POST['hum02']) && !empty($_POST['hum02']))
-                {
-                    $temp01 = $_POST["temp01"];
-                    $hum01 = $_POST["hum01"];
-                    $success = $_POST["success"];
-                    $sql01="INSERT INTO table_dht(dht_success, dht_temperature, dht_humidity, dht_name, dht_location)
-                    VALUES ('$success', '$temp01', '$hum01', 'DHT11_PIN2', 'x')";
+if(isset($_POST['valid_connection']))
+    if(isset($_POST['form_username']) && !empty($_POST['form_username']) && isset($_POST['form_password']) && !empty($_POST['form_password']))
+    {
+        $username = $_POST['form_username'];
+        $password = $_POST['form_password'];
 
-                    $temp02 = $_POST["temp02"];
-                    $hum02 = $_POST["hum02"];
-                    $success = $_POST["success"];
-                    $sql02="INSERT INTO table_dht(dht_success, dht_temperature, dht_humidity, dht_name, dht_location)
-                    VALUES ('$success', '$temp02', '$hum02', 'DHT11_PIN3', 'x')";
+        $sql = 'SELECT * FROM table_users WHERE user_name = :name';
+        $fields = ['name' => $username];
+        $req = Database::getInstance()->request($sql, $fields);
 
-                    try{$conn->query($sql01);$conn->query($sql02);}
-                    catch(Exception $pe){echo $pe->getMessage();}
-                }
+        if($req && password_verify($password, $req['user_password']))
+        {
+            init_php_session();
 
-$conn=null;
+            $_SESSION['username'] = $username;
+            $_SESSION['rank'] = $req['user_admin'];
+
+            $attempt_failed = 0;
+        }
+        else
+        {
+            $attempt_failed = 1;
+        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -45,56 +44,46 @@ $conn=null;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Samuel Jacquet</title>
+    <title>Page d'acceuil</title>
 </head>
 <body class="container">
 	<header class="item">
-		<h1>Tableau de bord</h1>
+		<h1>Page d'acceuil</h1>
 	</header>
 
     <main class="item">
         <section>
-            <h1>Page de collecte de données</h1>
+            <h1>Connexion</h1>
             <div>
-                <h2>Données DHT</h2>
-                <table cellspacing="5" cellpadding="5">
-                    <tr> 
-                        <td>DATE</td>
-                        <td>NAME</td>
-                        <td>HUMIDITY</td> 
-                        <td>TEMPERATURE</td> 
-                        <td>SUCCESS</td> 
-                    </tr>
-                    <?php 
-                        $dht_sql = Database::getInstance()->display();
-                        foreach($dht_sql as $row):
-                            $row_id = $row['id_dht'];
-                            $row_date = $row['dht_date'];
-                            $row_name = $row['dht_name'];
-                            $row_humidity = $row['dht_humidity'];
-                            $row_temperature = $row['dht_temperature'];
-                            $row_success = $row['dht_success'];
-                            $row_date = date("Y-m-d H:i:s");
-                            echo '<tr>
-                            <td>'.$row_date.'</td>
-                            <td>'.$row_name.'</td>
-                            <td>'.$row_humidity.'</td>
-                            <td>'.$row_temperature.'</td>
-                            <td>'.$row_success.'</td>
-                            </tr>';
-                        endforeach;
-                    ?>
-                </table>
+                <h2></h2>
+
+            <?php if($attempt_failed > 0): ?>
+                <p>Indentifiant ou mot de passe incorrect</p>
+            <?php endif; ?>
+
+            <?php if(is_logged()): ?>
+                <p>Bienvenue <?= htmlspecialchars($_SESSION['username']) ?> | <a href="index.php?action=logout">Se déconnecter</a></p>
+            <?php else: ?>
+                <form method="post">
+                    <input type="text" name="form_username" placeholder="Identifiant...">
+                    <input type="password" name="form_password" placeholder="Mot de passe...">
+                    <input type="submit" name="valid_connection" value="connexion">
+                </form>
+            <?php endif; ?>
+
             </div>
         </section>
     </main>
 
-    <aside class="item">
+    <aside>
+    <?php if(is_logged()): ?>
+        <nav>
+            <ul>
+                <li><a href="Sensor/DataDisplay.php">>> Affichage de données</a></li>
+            </ul>
+        </nav>
     </aside>
-
-    <footer class="item">
-        <p>Copyright &copy; 2021</p>
-    </footer>
-
+    <?php endif; ?>
+    <footer></footer>
 </body>
 </html>
