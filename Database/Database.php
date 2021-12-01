@@ -19,7 +19,7 @@ class Database
         {
             $options =
             [
-                PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
+                PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES UTF8; SET time_zone='Europe/Brussels'",
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_EMULATE_PREPARES => false
             ];
@@ -53,7 +53,7 @@ class Database
     public function request($sql, $fields = NULL, $fetchall = false)
     {
         try{
-            $req = $this->getConnection()->prepare(SET time_zone = '+01:00';$sql);
+            $req = $this->getConnection()->prepare($sql);
             $req->execute($fields);
 
             if(!$fetchall)
