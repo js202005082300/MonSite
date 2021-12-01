@@ -53,7 +53,7 @@ class Database
     public function request($sql, $fields = NULL, $fetchall = false)
     {
         try{
-            $this->getConnection()->query('SET time_zone = '+01:00';')->fetchall(PDO::FETCH_ASSOC);
+            $this->getConnection()->query("SET time_zone = '+01:00';")->fetchall(PDO::FETCH_ASSOC);
             $req = $this->getConnection()->prepare($sql);
             $req->execute($fields);
 
