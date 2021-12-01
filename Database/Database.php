@@ -1,5 +1,4 @@
 <?php
-
 date_default_timezone_set('Europe/Brussels');
 
 class Database
@@ -50,11 +49,11 @@ class Database
     {
         return $this->_connection = NULL;
     }
-
+    
     public function request($sql, $fields = NULL, $fetchall = false)
     {
         try{
-            $req = $this->getConnection()->prepare($sql);
+            $req = $this->getConnection()->prepare(SET time_zone = '+01:00';$sql);
             $req->execute($fields);
 
             if(!$fetchall)
