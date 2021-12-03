@@ -5,9 +5,6 @@
 -- CREATE DATABASE IF NOT EXISTS `u870391923_MyDB`;
 -- USE `u870391923_MyDB`;
 
-SET time_zone = '+01:00';
-SELECT NOW();
-
 DROP TABLE IF EXISTS `table_users`;
 CREATE TABLE IF NOT EXISTS `table_users`
 (
@@ -15,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `table_users`
     `user_name` VARCHAR(25) NOT NULL UNIQUE,
     `user_password` VARCHAR(255) NOT NULL,
     `user_email` VARCHAR(50) NOT NULL,
-    `user_registerDate` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    `user_registerDate` DATETIME DEFAULT NOW() NOT NULL,
     `user_admin` TINYINT(1) NOT NULL DEFAULT '0',
     PRIMARY KEY(`id_user`)
 );
@@ -31,7 +28,7 @@ CREATE TABLE IF NOT EXISTS `table_clients`
     `client_email` VARCHAR(50) NOT NULL,
     `client_tel` VARCHAR(25) NOT NULL,
     `client_description` TEXT,
-    `client_registerDate` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    `client_registerDate` DATETIME DEFAULT NOW() NOT NULL,
     PRIMARY KEY(`id_client`)
 );
 
@@ -39,7 +36,7 @@ DROP TABLE IF EXISTS `table_dht`;
 CREATE TABLE IF NOT EXISTS `table_dht`
 (
     `id_dht` BIGINT(20) NOT NULL AUTO_INCREMENT,
-    `dht_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    `dht_date` DATETIME DEFAULT NOW() NOT NULL,
     `dht_sensorName` VARCHAR(50) NOT NULL,
     `dht_location` VARCHAR(50) DEFAULT '-',
     `dht_humidity` FLOAT DEFAULT 0.00,

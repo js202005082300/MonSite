@@ -2,8 +2,6 @@
 require '../Database/Database.php';
 require '../util.php';
 
-date_default_timezone_set('Europe/Brussels');
-
 init_php_session();
 ?>
 
@@ -32,36 +30,26 @@ init_php_session();
                         <td>SENSOR NAME</td>
                         <td>LOCATION</td>
                         <td>HUMIDITY</td> 
-                        <td>TEMP C°</td> 
-                        <td>TEMP F°</td>
-                        <td>HEAT INDEX C°</td>
-                        <td>HEAT INDEX F°</td>
+                        <td>TEMP C</td> 
+                        <td>TEMP F</td>
+                        <td>HEAT INDEX C</td>
+                        <td>HEAT INDEX F</td>
                         <td>DEW POINT</td>
                     </tr>
                     <?php
                     $sql = 'SELECT * FROM table_dht ORDER BY id_dht DESC LIMIT 10;';
                     $req = Database::getInstance()->request($sql, NULL, true);
                     foreach($req as $row):
-                        $row_id = $row['id_dht'];
-                        $row_date = $row['dht_date'];
-                        $row_sensorName = $row['dht_sensorName'];
-                        $row_location = $row['dht_location'];
-                        $row_humidity = $row['dht_humidity'];
-                        $row_tempCelsus = $row['dht_tempCelsus'];
-                        $row_tempFahrenheit = $row['dht_tempFahrenheit'];
-                        $row_heatIndexCelsus = $row['dht_heatIndexCelsus'];
-                        $row_heatIndexFahrenheit = $row['dht_heatIndexFahrenheit'];
-                        $row_dewPoint = $row['dht_dewPoint'];
                         echo '<tr>
-                        <td>'.$row_date.'</td>
-                        <td>'.$row_sensorName.'</td>
-                        <td>'.$row_location.'</td>
-                        <td>'.$row_humidity.'</td>
-                        <td>'.$row_tempCelsus.'</td>
-                        <td>'.$row_tempFahrenheit.'</td>
-                        <td>'.$row_heatIndexCelsus.'</td>
-                        <td>'.$row_heatIndexFahrenheit.'</td>
-                        <td>'.$row_dewPoint.'</td>
+                        <td>'.$row['dht_date'].'</td>
+                        <td>'.$row['dht_sensorName'].'</td>
+                        <td>'.$row['dht_location'].'</td>
+                        <td>'.$row['dht_humidity'].'</td>
+                        <td>'.$row['dht_tempCelsus'].'</td>
+                        <td>'.$row['dht_tempFahrenheit'].'</td>
+                        <td>'.$row['dht_heatIndexCelsus'].'</td>
+                        <td>'.$row['dht_heatIndexFahrenheit'].'</td>
+                        <td>'.$row['dht_dewPoint'].'</td>
                         </tr>';
                     endforeach;
                     ?>
@@ -80,6 +68,8 @@ init_php_session();
 <?php if(is_admin()): ?>
 
     (compte administrateur)</p>
+
+    <a href="download.php" class="bouton">Télécharger</a>
 
 <?php endif; ?>
 
