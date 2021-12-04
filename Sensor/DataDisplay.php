@@ -74,6 +74,8 @@ init_php_session();
 <?php endif; ?>
 
     <aside></aside>
-    <footer></footer>
+    <footer>
+        <p><a href="../index.php">&laquo; Retour à l'acceuil</a></p>
+    </footer>
 </body>
 </html>
