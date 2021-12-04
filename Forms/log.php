@@ -2,6 +2,8 @@
 require 'Database/Database.php';
 require 'util.php';
 
+init_php_session();
+
 $attempt_failed = 0;
 
 if(isset($_GET['action']) && !empty($_GET['action'] && $_GET['action'] == "logout"))

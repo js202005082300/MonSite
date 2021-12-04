@@ -1,5 +1,5 @@
 <?php
-require 'login.php';
+require 'forms/log.php';
 ?>
 
 <!DOCTYPE html>
@@ -30,9 +30,14 @@ require 'login.php';
                     <p>Bienvenue <?= htmlspecialchars($_SESSION['username']) ?> | <a href="index.php?action=logout">Se déconnecter</a></p>
                 <?php else: ?>
                     <form method="post">
-                        <input type="text" name="form_username" placeholder="Identifiant...">
-                        <input type="password" name="form_password" placeholder="Mot de passe...">
-                        <input type="submit" name="valid_connection" value="connexion">
+                        <fieldset form="log_form">
+                            <legend>Connexion</legend>
+
+                            <input type="text" name="form_username" placeholder="Identifiant...">
+                            <input type="password" name="form_password" placeholder="Mot de passe...">
+                            <input type="submit" name="valid_connection" value="connexion">
+
+                        </fieldset>
                     </form>
                 <?php endif; ?>
             </div>
@@ -41,7 +46,9 @@ require 'login.php';
 
     <aside>
     <?php if(is_logged()): ?>
-        <a href="Sensor/DataDisplay.php">&laquo; Affichage de données</a>
+        <p><a href="Sensor/DataDisplay.php">Affichage de données &raquo;</a></p>
+        <p><a href="Forms/clientForm.php">Formulaire client &raquo;</a></p>
+        <p><a href="Forms/registration.php">Formulaire d'enregistrement &raquo;</a></p>
     </aside>
     <?php endif; ?>
     <footer></footer>
