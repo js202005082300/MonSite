@@ -1,5 +1,5 @@
 <?php
-require 'forms/log.php';
+require 'Forms/log.php';
 ?>
 
 <!DOCTYPE html>
