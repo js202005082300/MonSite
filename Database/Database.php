@@ -6,12 +6,12 @@ class Database
     private $_connection;
     private static $_instance = null;
     
-    private static $DB_DSN = 'mysql:host=localhost;dbname=u870391923_MyDB';
-    private static $DB_USER = 'u870391923_root';
-    private static $DB_PASS = 'o8jtuHhZPmLXiVUZoj';
-    // private static $DB_DSN = 'mysql:host=localhost;dbname=MyDB';
-    // private static $DB_USER = 'root';
-    // private static $DB_PASS = '';
+    // private static $DB_DSN = 'mysql:host=localhost;dbname=u870391923_MyDB';
+    // private static $DB_USER = 'u870391923_root';
+    // private static $DB_PASS = 'o8jtuHhZPmLXiVUZoj';
+    private static $DB_DSN = 'mysql:host=localhost;dbname=MyDB';
+    private static $DB_USER = 'root';
+    private static $DB_PASS = '';
 
     private function __construct()
     {
