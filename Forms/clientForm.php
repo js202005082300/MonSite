@@ -34,7 +34,7 @@ $sql = 'INSERT INTO table_clients (client_firstname, client_lastname, client_gen
 							}
 
 							unset($_POST, $request, $sql, $fields);
-							header('Location: form.php');
+							header('Location: clientForm.php');
 						}
 }
 
