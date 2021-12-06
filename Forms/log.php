@@ -28,6 +28,10 @@ if(isset($_POST['valid_connection']))
 
             $_SESSION['username'] = $username;
             $_SESSION['rank'] = $req['user_admin'];
+            
+            $sql = 'UPDATE table_users SET user_lastConnexion=now() WHERE user_name = :name';
+            $fields = ['name' => $username];
+            $req = Database::getInstance()->request($sql, $fields);
 
             $attempt_failed = 0;
         }

@@ -1,47 +1,55 @@
 <?php
+// unset($_POST);
 
 require '../Database/Database.php';
 
-$attempt_failed = 0;
+// https://code.tutsplus.com/fr/tutorials/how-to-create-a-simple-web-based-chat-application--net-5931
 
-if(isset($_POST['valid_registration']))
+$different_password = 0;
+$name_exists = 0;
+$email_exists = 0;
+$username = '';
+$email = '';
+$hash = '';
+
+if(isset($_POST['registration_username']) && !empty($_POST['registration_username']))
 {
-	if(isset($_POST['registration_username']) && !empty($_POST['registration_username']))
-        if(isset($_POST['registration_email']) && !empty($_POST['registration_email']))
-            if(isset($_POST['registration_password']) && !empty($_POST['registration_password']))
-                if(isset($_POST['registration_password_verif']) && !empty($_POST['registration_password_verif']))
-                {
-                    if($_POST['registration_password'] == $_POST['registration_password_verif'])
-                    {
-                        $hash = password_hash($_POST['registration_password'], PASSWORD_BCRYPT);
-                    
-                        $fields = [
-                            'username' => $_POST['registration_username'],
-                            'email' => $_POST['registration_email'],
-                            'password' => $hash
-                        ];
-        
-                        $sql = 'INSERT INTO table_users (user_name, user_email, user_password) VALUES (:username, :email, :password)';
-        
-                        try
-                        {
-                            $req = Database::getInstance()->request($sql, $fields);
-                        }
-                        catch(PDOException $pe)
-                        {
-                            //echo "<script type= 'text/javascript'>alert('New Record Inserted Successfully');</script>";
-                            echo 'ERREUR : '.$pe->getMessage();
-                        }
+    $username = $_POST['registration_username'];
+    $sql = "SELECT count(*) AS '0' FROM table_users WHERE user_name='".$username."';";
+    $req = Database::getInstance()->request($sql, NULL, False);
+    if($req[0])
+        $name_exists = True;
+}
+    
+if(isset($_POST['registration_email']) && !empty($_POST['registration_email']))
+{
+    $email = $_POST['registration_email'];
+    $sql = "SELECT count(*) AS '0' FROM table_users WHERE user_email='".$email."';";
+    $req = Database::getInstance()->request($sql, NULL, False);
+    if($req[0])
+        $email_exists = True;
+}
 
-                        $attempt_failed = 0;
-                        unset($_POST, $request, $sql, $fields);
-                        header('Location: registration.php');
-                    }
-                    else
-                    {
-                        $attempt_failed = 1;
-                    }
-                }
+if(isset($_POST['registration_password']) && !empty($_POST['registration_password']))
+    if(isset($_POST['registration_password_verif']) && !empty($_POST['registration_password_verif']))
+        if($_POST['registration_password'] == $_POST['registration_password_verif'])
+            $hash = password_hash($_POST['registration_password'], PASSWORD_BCRYPT);
+        else
+            $different_password = 1;
+
+
+if((!$different_password && !$name_exists && !$email_exists) && ($username && $email && $hash))
+{
+    $fields =
+    [
+        'username' => $username,
+        'email' => $email,
+        'password' => $hash
+    ];
+    $sql = 'INSERT INTO table_users (user_name,user_email,user_password) VALUES (:username,:email,:password)';
+    $requ = Database::getInstance()->request($sql, $fields);
+
+    header('Location:registration.php?inserted');
 }
 
 ?>
@@ -59,20 +67,35 @@ if(isset($_POST['valid_registration']))
 		<fieldset form="user_form">
 				<legend>Nouvel utilisateur</legend>
 
-		<p><label for="registration_username">Nom d'utilisateur</label> : <input type="text" id="registration_username" name="registration_username"></p>
+        <?php if(isset($_GET['inserted'])): ?>
+            <p>Statut : Données insérées !</p>
+        <?php else: ?>
+            <p>Statut : Enregistrez-vous ...</p>
 
-        <p><label for="registration_email">Email</label> : <input type="email" id="registration_email" name="registration_email"></p>
+            <p><label for="registration_username">Nom d'utilisateur</label> : <input type="text" id="registration_username" name="registration_username" value='<?=$username?>'>
 
-		<p><label for="registration_password">Mot de passe</label> : <input type="password" id="registration_password" name="registration_password"></p>
+            <?php if($name_exists): ?>
+                <b>Nom d'utilisateur existe déjà !</b></p>
+            <?php endif; ?>
 
-        <p><label for="registration_password_verif">Répeter le mot de passe</label> : <input type="password" id="registration_password_verif" name="registration_password_verif"></p>
+            <p><label for="registration_email">Email</label> : <input type="email" id="registration_email" name="registration_email" value='<?=$email?>'>
 
-        <?php if($attempt_failed > 0): ?>
-            <p><b>Mot de passe différent</b></p>
+            <?php if($email_exists): ?>
+                <b>E-mail existe déjà !</b></p>
+            <?php endif; ?>
+
+            <p><label for="registration_password">Mot de passe</label> : <input type="password" id="registration_password" name="registration_password"></p>
+
+            <p><label for="registration_password_verif">Répeter le mot de passe</label> : <input type="password" id="registration_password_verif" name="registration_password_verif"> 
+
+            <?php if($different_password): ?>
+                <b>Mot de passe différent</b></p>
+            <?php endif; ?>
+
+            <p><input type="reset" value="effacer">
+            <input type="submit" name="valid_registration" value="valider"></p>
+
         <?php endif; ?>
-
-        <p><input type="reset" value="effacer">
-		<input type="submit" name="valid_registration" value="valider"></p>
 
 		</fieldset>
 	</form>

@@ -49,6 +49,7 @@ require 'Forms/log.php';
         <p><a href="Sensor/DataDisplay.php">Affichage de données &raquo;</a></p>
         <p><a href="Forms/clientForm.php">Formulaire client &raquo;</a></p>
         <p><a href="Forms/registration.php">Formulaire d'enregistrement &raquo;</a></p>
+        <p><a href="ChatBox/chat.php">Chat Box &raquo;</a></p>
     </aside>
     <?php endif; ?>
     <footer></footer>
