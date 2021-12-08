@@ -16,6 +16,9 @@ require 'Forms/log.php';
 		<h1>Bienvenue</h1>
         <p>Bienvenue sur mon Site personnel.</p>
         <p></p>
+        <section class="">
+            
+        </section>
 	</header>
 
     <main class="item">

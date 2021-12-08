@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('Europe/Brussels');
+
 function init_php_session() : bool
 {
     if(!session_id())
