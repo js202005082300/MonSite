@@ -1,0 +1,39 @@
+
+/* Floating */
+.welcome{float:left;}
+.logout{float:right;}
+
+/* Borders */
+header{border:1px solid;}
+main{border:1px solid;}
+
+/* Paddings */
+header, main{padding:5px;}
+
+/* Margins */
+body{margin:15px;}
+header, main{margin:5px;}
+
+/* Media Queries */
+.container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:"header main"
+                        "header main"
+                        "header aside"
+                        "footer footer";
+}
+header{grid-area:header;}
+main{grid-area:main;}
+footer{grid-area:footer;}
+aside{grid-area:aside;}
+@media(max-width:600px), screen and (orientation: portrait)
+{
+    .container
+    {
+        grid-template-columns: 1fr;
+		grid-template-areas:"header"
+							"main"
+                            "footer";
+    }
+}

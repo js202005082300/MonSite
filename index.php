@@ -13,7 +13,9 @@ require 'Forms/log.php';
 </head>
 <body class="container">
 	<header class="item">
-		<h1>Page d'acceuil</h1>
+		<h1>Bienvenue</h1>
+        <p>Bienvenue sur mon Site personnel.</p>
+        <p></p>
 	</header>
 
     <main class="item">
@@ -45,13 +47,26 @@ require 'Forms/log.php';
     </main>
 
     <aside>
-    <?php if(is_logged()): ?>
-        <p><a href="Sensor/DataDisplay.php">Affichage de données &raquo;</a></p>
-        <p><a href="Forms/clientForm.php">Formulaire client &raquo;</a></p>
-        <p><a href="Forms/registration.php">Formulaire d'enregistrement &raquo;</a></p>
-        <p><a href="ChatBox/chat.php">Chat Box &raquo;</a></p>
+        <?php if(is_logged()): ?>
+            <nav>
+                <ul>
+                    <li>
+        <a href="Sensor/DataDisplay.php">Affichage de données &raquo;</a>
+                    </li>
+                    <li>
+        <a href="Forms/clientForm.php">Formulaire client &raquo;</a>
+                    </li>
+                    <li>
+        <a href="Forms/registration.php">Formulaire d'enregistrement &raquo;</a>
+                    </li>
+                    <li>
+        <a href="ChatBox/chat.php">Chat Box &raquo;</a>
+                    </li>
+                </ul>
+            </nav>
+        <?php endif; ?>
     </aside>
-    <?php endif; ?>
+    
     <footer></footer>
 </body>
 </html>
