@@ -1,0 +1,56 @@
+/* Floating */
+.welcome{float:left;}
+.logout{float:right;}
+
+/* Borders */
+.chatbox, .chatusers{border:1px solid;}
+
+/* text-align */
+.chatbox{text-align:left;}
+
+/* Padding */
+.chatbox, .chatusers, .message{padding:10px;}
+
+/* Margin */
+.chatbox, .chatusers, .message{margin-bottom:25px;}
+
+/* Width */
+.wrapper{width:500px;height:500px;}
+
+/* Hover */
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+/* Overflow */
+.chatbox{overflow-y:scroll;overflow-wrap:break-word;}
+.chatusers{overflow-y:scroll;overflow-x:hidden;}
+
+/* Media Queries */
+.chatbox{
+    display:flex;
+    flex-direction:column-reverse;
+}
+
+.wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-areas:"menu menu menu"
+                        "chatusers chatbox chatbox"
+                        "message message message";
+
+}
+.menu{grid-area:menu;}
+.chatbox{grid-area:chatbox;}
+.message{grid-area:message;}
+
+@media(max-width:600px), screen and (orientation: portrait)
+{
+    .wrapper
+    {
+        grid-template-columns: 1fr;
+		grid-template-areas:"menu"
+							"chatbox"
+                            "message"
+                            "chatusers";
+    }
+}

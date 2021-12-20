@@ -1,0 +1,36 @@
+.social
+{
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.facebook{background-image: url("icons/200px/facebook_black.webp");}
+.facebook:hover{background-image: url("icons/200px/facebook_white.webp");}
+
+.instagram{background-image: url("icons/200px/instagram_black.webp");}
+.instagram:hover{background-image: url("icons/200px/instagram_white.webp");}
+
+.twitter{background-image: url("icons/200px/twitter_black.webp");}
+.twitter:hover{background-image: url("icons/200px/twitter_white.webp");}
+
+.youtube{background-image: url("icons/200px/youtube_black.webp");}
+.youtube:hover{background-image: url("icons/200px/youtube_white.webp");}
+
+.github{background-image: url("icons/200px/github_black.webp");}
+.github:hover{background-image: url("icons/200px/github_white.webp");}
+
+.mail{background-image: url("icons/200px/mail_black.webp");}
+.mail:hover{background-image: url("icons/200px/mail_white.webp");}
+
+.whatsapp{background-image: url("icons/200px/whatsapp_black.webp");}
+.whatsapp:hover{background-image: url("icons/200px/whatsapp_white.webp");}
+
+.www{background-image: url("icons/200px/www_black.webp");}
+.www:hover{background-image: url("icons/200px/www_white.webp");}
+
+/* Media queries */
+.social{
+    display:grid;
+    grid-template-columns:25px 25px 25px 25px 25px 25px 25px 25px;
+}

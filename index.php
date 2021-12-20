@@ -1,5 +1,7 @@
 <?php
-require 'Forms/log.php';
+require 'util.php';
+
+init_php_session();
 ?>
 
 <!DOCTYPE html>
@@ -9,44 +11,20 @@ require 'Forms/log.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Page d'acceuil</title>
+    <title>Samuel Jacquet</title>
 </head>
 <body class="container">
 	<header class="item">
 		<h1>Bienvenue</h1>
         <p>Bienvenue sur mon Site personnel.</p>
+        <?php if(is_logged()): ?>
+            <?php //require_once 'Social/social.php'; ?>
+        <?php endif; ?>
         <p></p>
-        <section class="">
-            
-        </section>
 	</header>
 
     <main class="item">
-        <section>
-            <h1>Connexion</h1>
-            <div>
-                <h2></h2>
-
-                <?php if($attempt_failed > 0): ?>
-                    <p>Indentifiant ou mot de passe incorrect</p>
-                <?php endif; ?>
-
-                <?php if(is_logged()): ?>
-                    <p>Bienvenue <?= htmlspecialchars($_SESSION['username']) ?> | <a href="index.php?action=logout">Se déconnecter</a></p>
-                <?php else: ?>
-                    <form method="post">
-                        <fieldset form="log_form">
-                            <legend>Connexion</legend>
-
-                            <input type="text" name="form_username" placeholder="Identifiant...">
-                            <input type="password" name="form_password" placeholder="Mot de passe...">
-                            <input type="submit" name="valid_connection" value="connexion">
-
-                        </fieldset>
-                    </form>
-                <?php endif; ?>
-            </div>
-        </section>
+        <?php require 'Connection/log.php'; ?>
     </main>
 
     <aside>
@@ -65,11 +43,16 @@ require 'Forms/log.php';
                     <li>
         <a href="ChatBox/chat.php">Chat Box &raquo;</a>
                     </li>
+                    <li>
+        <a href="DataBase/source.php">Requête Source &raquo;</a>
+                    </li>
                 </ul>
             </nav>
         <?php endif; ?>
     </aside>
     
-    <footer></footer>
+    <footer>
+        
+    </footer>
 </body>
 </html>

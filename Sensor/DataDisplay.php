@@ -1,4 +1,5 @@
 <?php
+header('Refresh: 15;URL=chat.php');
 require '../Database/Database.php';
 require '../util.php';
 

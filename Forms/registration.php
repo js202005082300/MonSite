@@ -3,8 +3,6 @@
 
 require '../Database/Database.php';
 
-// https://code.tutsplus.com/fr/tutorials/how-to-create-a-simple-web-based-chat-application--net-5931
-
 $different_password = 0;
 $name_exists = 0;
 $email_exists = 0;

@@ -1,0 +1,27 @@
+>>> 552/3
+184.0
+>>> 592/4
+148.0
+>>> (552-120)/3
+144.0
+
+ffmpeg -i msn-07.png -vf hue=s=0 -c:a copy msn-13.png
+
+
+
+ffmpeg -i .\msn-icons.png -vf "crop=144:148:60:0" msn-01.png
+ffmpeg -i .\msn-icons.png -vf "crop=144:148:204:0" msn-02.png
+ffmpeg -i .\msn-icons.png -vf "crop=144:148:348:0" msn-03.png
+
+ffmpeg -i .\msn-icons.png -vf "crop=144:148:60:148" msn-04.png
+ffmpeg -i .\msn-icons.png -vf "crop=144:148:204:148" msn-05.png
+ffmpeg -i .\msn-icons.png -vf "crop=144:148:348:148" msn-06.png
+
+ffmpeg -i .\msn-icons.png -vf "crop=144:148:60:296" msn-07.png
+ffmpeg -i .\msn-icons.png -vf "crop=144:148:204:296" msn-08.png
+ffmpeg -i .\msn-icons.png -vf "crop=144:148:348:296" msn-09.png
+
+ffmpeg -i .\msn-icons.png -vf "crop=144:148:60:444" msn-10.png
+ffmpeg -i .\msn-icons.png -vf "crop=144:148:204:444" msn-11.png
+ffmpeg -i .\msn-icons.png -vf "crop=144:148:348:444" msn-12.png
+

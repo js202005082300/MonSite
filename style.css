@@ -1,18 +1,17 @@
-
-/* Floating */
-.welcome{float:left;}
-.logout{float:right;}
-
 /* Borders */
 header{border:1px solid;}
 main{border:1px solid;}
 
-/* Paddings */
+/* Padding */
 header, main{padding:5px;}
 
-/* Margins */
+/* Margin */
 body{margin:15px;}
 header, main{margin:5px;}
+
+/* Hover */
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
 
 /* Media Queries */
 .container{
@@ -20,8 +19,7 @@ header, main{margin:5px;}
     grid-template-columns:1fr 1fr;
     grid-template-areas:"header main"
                         "header main"
-                        "header aside"
-                        "footer footer";
+                        "header aside";
 }
 header{grid-area:header;}
 main{grid-area:main;}
