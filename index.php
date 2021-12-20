@@ -44,7 +44,7 @@ init_php_session();
         <a href="ChatBox/chat.php">Chat Box &raquo;</a>
                     </li>
                     <li>
-        <a href="DataBase/source.php">Requête Source &raquo;</a>
+        <a href="Database/source.php">Requête Source &raquo;</a>
                     </li>
                 </ul>
             </nav>
