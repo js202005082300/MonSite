@@ -2,6 +2,17 @@
     require '../util.php';
 
     init_php_session();
+
+
+    if(isset($_POST['valid_source']))
+    {
+        if(run_sql_file("mydb.sql"))
+            echo '<p>Intégration réusie.</p>';
+        else
+            echo '<p>Intégration échouée !</p>';
+
+        echo "<p><a href='../index.php'>&laquo; Retour à l'acceuil</a></p>";
+    }
 ?>
 
 <?php if(is_admin()): ?>
@@ -53,16 +64,6 @@
     function startsWith($haystack, $needle){
         $length = strlen($needle);
         return (substr($haystack, 0, $length) === $needle);
-    }
-
-    if(isset($_POST['valid_source']))
-    {
-        if(run_sql_file("mydb.sql"))
-            echo '<p>Intégration réusie.</p>';
-        else
-            echo '<p>Intégration échouée !</p>';
-
-        echo "<p><a href='../index.php'>&laquo; Retour à l'acceuil</a></p>";
     }
     ?>
 
