@@ -3,6 +3,8 @@
 
     init_php_session();
 
+    echo "Qu'est-ce qui se passe !";
+
 
     if(isset($_POST['valid_source']))
     {
