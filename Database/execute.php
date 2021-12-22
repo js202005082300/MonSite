@@ -1,3 +1,5 @@
+<p>Salut</p>
+
 <?php
     require '../util.php';
     require 'extract.php';
