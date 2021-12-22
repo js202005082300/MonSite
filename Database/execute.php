@@ -12,9 +12,13 @@
     }
 ?>
 <?php //if(is_admin()): ?>
+<div>
     <form method="post">
         <fieldset form="source_form">
-    <input type="submit" name="valid_source" value="Requête Source" />
+        <legend>Bouton d'exécution MySQL</legend>
+<input type="submit" name="valid_source" value="Requête Source" />
         </fieldset>
     </form>
+</div>
+
 <?php //endif; ?>
