@@ -4,6 +4,8 @@
     require '../util.php';
     require 'extract.php';
 
+    echo 'TESTESTEST';
+
     init_php_session();
 
     if(isset($_POST['valid_source']))
@@ -14,23 +16,9 @@
     }
 ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-	<meta charset="UTF-8">
-	<title>Formulaire HTML</title>
-</head>
-<body>
-	<h1>Saisie d'informations</h1>
-
-<div>
     <form method="post">
         <fieldset form="source_form">
         <legend>Bouton d'exécution MySQL</legend>
 <input type="submit" name="valid_source" value="Requête Source" />
         </fieldset>
     </form>
-</div>
-
-</body>
-</html>
