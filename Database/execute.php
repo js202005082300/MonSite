@@ -1,3 +1,5 @@
+<?php if(is_admin()): ?>
+
 <?php
     require '../util.php';
     require 'extract.php';
@@ -11,8 +13,6 @@
         echo "<p><a href='../index.php'>&laquo; Retour à l'acceuil</a></p>";
     }
 ?>
-
-<?php if(is_admin()): ?>
 
     <form method="post">
         <fieldset form="source_form">
