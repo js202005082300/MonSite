@@ -13,7 +13,7 @@
         echo "<p><a href='../index.php'>&laquo; Retour à l'acceuil</a></p>";
     }
 ?>
-<?php //if(is_admin()): ?>
+
 <div>
     <form method="post">
         <fieldset form="source_form">
@@ -22,5 +22,3 @@
         </fieldset>
     </form>
 </div>
-
-<?php //endif; ?>
