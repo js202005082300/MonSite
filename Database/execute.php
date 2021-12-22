@@ -4,10 +4,9 @@
 
     // init_php_session();
 
-    if(isset($_POST['valid_source']))
+    if(isset($_POST['valid_execute']))
     {
-        $req = run_sql_file("mydb.sql");
-        print_r($req);
+        run_sql_file("mydb.sql");
         echo "<p><a href='../index.php'>&laquo; Retour à l'acceuil</a></p>";
     }
 ?>
@@ -16,6 +15,6 @@
     <p>Bon on est dans le form</p>
         <fieldset form="source_form">
         <legend>Bouton d'exécution MySQL</legend>
-<input type="submit" name="valid_source" value="Requête Source" />
+<input type="submit" name="valid_execute" value="Requête execute" />
         </fieldset>
 </form>
