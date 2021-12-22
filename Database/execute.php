@@ -14,6 +14,15 @@
     }
 ?>
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulaire HTML</title>
+</head>
+<body>
+	<h1>Saisie d'informations</h1>
+
 <div>
     <form method="post">
         <fieldset form="source_form">
@@ -22,3 +31,6 @@
         </fieldset>
     </form>
 </div>
+
+</body>
+</html>
