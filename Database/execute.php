@@ -1,6 +1,8 @@
+
+
 <?php
-    echo 'TESTESTEST';
-    require 'util.php';
+        echo "<p><a href='../index.php'>&laquo; Retour à l'acceuil</a></p>";
+    require '../util.php';
     require 'extract.php';
 
     init_php_session();
