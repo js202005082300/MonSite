@@ -8,10 +8,9 @@
 </form>
 
 <?php
+    echo 'TESTESTEST';
     require '../util.php';
     require 'extract.php';
-
-    echo 'TESTESTEST';
 
     init_php_session();
 
