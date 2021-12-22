@@ -1,4 +1,11 @@
-<p>Salut</p>
+<p>Coucou</p>
+
+<form method="post">
+        <fieldset form="source_form">
+        <legend>Bouton d'exécution MySQL</legend>
+<input type="submit" name="valid_source" value="Requête Source" />
+        </fieldset>
+</form>
 
 <?php
     require '../util.php';
@@ -15,10 +22,3 @@
         echo "<p><a href='../index.php'>&laquo; Retour à l'acceuil</a></p>";
     }
 ?>
-
-    <form method="post">
-        <fieldset form="source_form">
-        <legend>Bouton d'exécution MySQL</legend>
-<input type="submit" name="valid_source" value="Requête Source" />
-        </fieldset>
-    </form>
