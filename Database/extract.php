@@ -1,6 +1,6 @@
 <?php
 
-require 'DataBase.php';
+require 'Database.php';
 
 function run_sql_file($fic){
     //load file
