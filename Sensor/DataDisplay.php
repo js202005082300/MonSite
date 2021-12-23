@@ -1,9 +1,12 @@
 <?php
-header('Refresh: 15;URL=chat.php');
-require '../Database/Database.php';
 require '../util.php';
-
 init_php_session();
+
+if(is_logged()): ?>
+
+<?php
+// header('Refresh: 15;URL=chat.php');
+require '../Database/Database.php';
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +22,7 @@ init_php_session();
 	<header>
         <h1>Page de collecte de données</h1>
     </header>
-<?php if(is_logged()): ?>
+
     <main>
         <section>
             <h1></h1>
@@ -72,11 +75,11 @@ init_php_session();
 
     <a href="download.php" class="bouton">Télécharger</a>
 
-<?php endif; ?>
-
     <aside></aside>
     <footer>
         <p><a href="../index.php">&laquo; Retour à l'acceuil</a></p>
     </footer>
 </body>
 </html>
+
+<?php endif; ?>
