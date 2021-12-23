@@ -2,9 +2,9 @@
 
 require 'DataBase.php';
 
-function run_sql_file($location){
+function run_sql_file($fic){
     //load file
-    $commands = file_get_contents($location);
+    $commands = file_get_contents($fic);
 
     //delete comments
     $lines = explode("\n",$commands);
