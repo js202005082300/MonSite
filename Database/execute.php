@@ -9,7 +9,8 @@ if(is_logged()): ?>
 
     if(isset($_POST['valid_execute']))
     {
-        run_sql_file("mydb.sql");
+        $sql = run_sql_file("mydb.sql");
+        print_r($sql);
         echo "<p><a href='../index.php'>&laquo; Retour à l'acceuil</a></p>";
     }
 ?>
