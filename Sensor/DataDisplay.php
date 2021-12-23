@@ -1,12 +1,6 @@
 <?php
 require '../util.php';
 init_php_session();
-
-if(is_logged()): ?>
-
-<?php
-// header('Refresh: 15;URL=chat.php');
-require '../Database/Database.php';
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +16,11 @@ require '../Database/Database.php';
 	<header>
         <h1>Page de collecte de données</h1>
     </header>
+
+<?php
+if(is_logged()):
+require '../Database/Database.php';
+?>
 
     <main>
         <section>
@@ -64,17 +63,14 @@ require '../Database/Database.php';
 
     <p>Session utilisateur : <?=htmlspecialchars($_SESSION['username'])?>
 <?php else: ?>
-
     <p><a href="../index.php">Page de connection</a>
-
 <?php endif; ?>
 
 <?php if(is_admin()): ?>
-
     (compte administrateur)</p>
-
     <a href="Download.php" class="bouton">Télécharger</a>
-
+<?php else: ?>
+    </p>
 <?php endif; ?>
 
     <aside></aside>
@@ -83,5 +79,3 @@ require '../Database/Database.php';
     </footer>
 </body>
 </html>
-
-<?php endif; ?>
