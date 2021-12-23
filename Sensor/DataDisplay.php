@@ -41,7 +41,7 @@ require '../Database/Database.php';
                         <td>DEW POINT</td>
                     </tr>
                     <?php
-                    $sql = 'SELECT * FROM table_dht ORDER BY id_dht DESC LIMIT 10;';
+                    $sql = 'SELECT * FROM table_dht ORDER BY id_dht DESC LIMIT 2;';
                     $req = Database::getInstance()->request($sql, NULL, true);
                     foreach($req as $row):
                         echo '<tr>
