@@ -75,6 +75,8 @@ require '../Database/Database.php';
 
     <a href="Download.php" class="bouton">Télécharger</a>
 
+<?php endif; ?>
+
     <aside></aside>
     <footer>
         <p><a href="../index.php">&laquo; Retour à l'acceuil</a></p>
