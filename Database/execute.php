@@ -1,6 +1,6 @@
 <?php
     //require '../util.php';
-    require 'extract.php';
+    //require 'extract.php';
 
     //init_php_session();
 
