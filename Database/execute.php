@@ -1,8 +1,8 @@
 <?php
-    //require '../util.php';
+    require '../util.php';
     //require 'extract.php';
 
-    //init_php_session();
+    init_php_session();
 
     if(isset($_POST['valid_execute']))
     {
