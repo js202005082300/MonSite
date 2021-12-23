@@ -3,7 +3,7 @@
 -- USE `MyDB`;
 USE `u870391923_MyDB`;
 
--- DROP TABLE IF EXISTS `table_users`;
+DROP TABLE IF EXISTS `table_users`;
 CREATE TABLE IF NOT EXISTS `table_users`(
     `id_user` BIGINT NOT NULL AUTO_INCREMENT,
     `user_name` VARCHAR(25) NOT NULL UNIQUE,
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `table_users`(
     PRIMARY KEY(`id_user`)
 );
 
--- DROP TABLE IF EXISTS `table_clients`;
+DROP TABLE IF EXISTS `table_clients`;
 CREATE TABLE IF NOT EXISTS `table_clients`(
     `id_client` BIGINT NOT NULL AUTO_INCREMENT,
     `client_firstname` VARCHAR(25) NOT NULL,
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `table_clients`(
     PRIMARY KEY(`id_client`)
 );
 
--- DROP TABLE IF EXISTS `table_dht`;
+DROP TABLE IF EXISTS `table_dht`;
 CREATE TABLE IF NOT EXISTS `table_dht`(
     `id_dht` BIGINT NOT NULL AUTO_INCREMENT,
     `dht_date` DATETIME DEFAULT NOW() NOT NULL,
