@@ -12,7 +12,6 @@
 ?>
 
 <form method="post">
-    <p>Bon on est dans le form</p>
         <fieldset form="source_form">
         <legend>Bouton d'exécution MySQL</legend>
 <input type="submit" name="valid_execute" value="Requête execute" />
