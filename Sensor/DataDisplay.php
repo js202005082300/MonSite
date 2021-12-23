@@ -73,7 +73,7 @@ require '../Database/Database.php';
 
     (compte administrateur)</p>
 
-    <a href="download.php" class="bouton">Télécharger</a>
+    <a href="Download.php" class="bouton">Télécharger</a>
 
     <aside></aside>
     <footer>
