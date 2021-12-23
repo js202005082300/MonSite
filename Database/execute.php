@@ -1,8 +1,11 @@
-<?php
+<?php 
     require '../util.php';
-    require 'extract.php';
-
     init_php_session();
+
+if(is_logged()): ?>
+
+<?php
+    require 'extract.php';
 
     if(isset($_POST['valid_execute']))
     {
@@ -17,3 +20,5 @@
 <input type="submit" name="valid_execute" value="Requête execute" />
         </fieldset>
 </form>
+
+<?php endif; ?>
