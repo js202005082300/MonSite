@@ -35,7 +35,7 @@ endforeach;
 if(!fclose($myFile))
 	exit("Fermeture du fichier echouee");
 
-// header('Location: data.csv');
+header('Location: data.csv');
 
 header('Content-Description: File Transfer');
 header('Content-Type: application/octet-stream');
