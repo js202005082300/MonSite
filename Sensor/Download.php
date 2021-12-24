@@ -42,8 +42,7 @@ if(file_exists($fic)){
         header('Content-Length: ' . filesize($fic));
         header('Pragma: public');
 
-        print_r($fic);
-
+        str_replace(".",";",$fic);
         readfile($fic,true);
 } else {
         echo "Le fichier ".$fic." n'existe pas !";
