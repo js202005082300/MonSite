@@ -1,7 +1,7 @@
 <?php
 require '../Database/Database.php';
 
-$fic = "dataPP.csv";
+$fic = "data.csv";
 $myFile = fopen($fic, "w");
 if(!$myFile)
 	exit("Ouverture du fichier impossible");
@@ -36,12 +36,13 @@ if(!fclose($myFile))
 	exit("Fermeture du fichier echouee");
 
 // header('Location: data.csv');
-
-header('Content-Description: File Transfer');
-header('Content-Type: application/octet-stream');
-header('Content-Disposition: attachment; filename="'.$fic.'"');
-header('Content-Length: ' . filesize($fic));
-header('Pragma: public');
+if(file_exists($fic)){
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
+        header('Content-Disposition: attachment; filename="'.$fic.'"');
+        header('Content-Length: ' . filesize($fic));
+        header('Pragma: public');
+}
 
 // if(isset($_GET['path']))
 // {
