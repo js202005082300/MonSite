@@ -35,13 +35,14 @@ endforeach;
 if(!fclose($myFile))
 	exit("Fermeture du fichier echouee");
 
-// header('Location: data.csv');
 if(file_exists($fic)){
         header('Content-Description: File Transfer');
         header('Content-Type: application/octet-stream');
         header('Content-Disposition: attachment; filename="'.$fic.'"');
         header('Content-Length: ' . filesize($fic));
         header('Pragma: public');
+
+        print_r($fic);
 
         readfile($fic,true);
 } else {
