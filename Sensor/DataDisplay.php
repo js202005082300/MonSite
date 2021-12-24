@@ -68,7 +68,7 @@ require '../Database/Database.php';
 
 <?php if(is_admin()): ?>
     (compte administrateur)</p>
-    <a href="Download.php?path=data.csv" class="bouton">Télécharger data.csv</a>
+    <a href="Download.php" class="bouton">Télécharger data.csv</a>
 <?php else: ?>
     </p>
 <?php endif; ?>
