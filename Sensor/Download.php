@@ -37,6 +37,12 @@ if(!fclose($myFile))
 
 // header('Location: data.csv');
 
+header('Content-Description: File Transfer');
+header('Content-Type: application/octet-stream');
+header('Content-Disposition: attachment; filename="data.csv"');
+header('Content-Length: ' . filesize("data.csv"));
+header('Pragma: public');
+
 // if(isset($_GET['path']))
 // {
 //         $url = $_GET['path'];
