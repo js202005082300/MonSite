@@ -42,6 +42,10 @@ if(file_exists($fic)){
         header('Content-Disposition: attachment; filename="'.$fic.'"');
         header('Content-Length: ' . filesize($fic));
         header('Pragma: public');
+
+        readfile($fic,true);
+} else {
+        echo "Le fichier ".$fic." n'existe pas !";
 }
 
 // if(isset($_GET['path']))
