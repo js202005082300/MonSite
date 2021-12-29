@@ -9,6 +9,7 @@ if(!$myFile)
 $sql = 'SELECT * FROM table_dht;';
 $req = Database::getInstance()->request($sql, NULL, true);
 $headCSV="ID".';'.
+        "DATE".';'.
         "SENSOR NAME".';'.
         "LOCATION".';'.
         "HUMIDITY".';'.

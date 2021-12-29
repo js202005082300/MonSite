@@ -11,6 +11,8 @@ foreach($req as $row):
     else
     {
         echo '<img src="icons/msn-13.png" width="20" alt="Photos Msn Icon" />';
-        echo $row['user_name'].'</br>';
+        echo htmlspecialchars($row['user_name']).'</br>';
     }
 endforeach;
+
+?>

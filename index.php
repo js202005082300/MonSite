@@ -46,6 +46,9 @@ init_php_session();
                     <li>
         <a href="Database/execute.php">Exécuter fichier source MySQL &raquo;</a>
                     </li>
+                    <li>
+        <a href="test.php">Test &raquo;</a>
+                    </li>
                 </ul>
             </nav>
         <?php endif; ?>

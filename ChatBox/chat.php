@@ -16,8 +16,11 @@ chatbox_send_message();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"
+    src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <link rel="stylesheet" href="chat.css">
     <title>Chat module</title>
+
 </head>
 <body>
     <div class="wrapper">
@@ -29,22 +32,18 @@ chatbox_send_message();
 
             <p class="logout"><a id="exit" href="../index.php?action=logout">Exit Chat</a></p>
         </div>
-
+        
         <div class="chatbox">
-
             <?php require 'chatbox.php'; ?>
-
         </div>
 
         <div class="chatusers">
-
             <?php require 'chatusers.php'; ?>
-
         </div>
 
         <div class="message">
             <form class="message_form" name="message_form" action="" method="post">
-                <input type="text" name="message_user" class="message_user" size="65">
+                <input type="text" name="message_user" class="message_user" size="55" maxlength="80">
                 <input type="submit" name="valid_message" class="valid_message" value="valider">
             </form>
         </div>
@@ -52,11 +51,15 @@ chatbox_send_message();
     </div> 
 
     <script>
-        $.get("chatbox.php", function(data)
-        {
-            $("#chatbox").append(data);
+        /* @return le chat actualisé en temps réel */
+        $(document).ready(function(){
+        setInterval(function(){
+            $(".chatbox").load(window.location.href + " .chatbox > *");
+            // $(".chatusers").load(window.location.href + " .chatusers");
+        }, 1000);
         });
     </script>
+
     <footer>
 <?php endif; ?>
         <p><a href="../index.php">&laquo; Retour à l'acceuil</a></p>

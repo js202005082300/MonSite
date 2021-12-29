@@ -1,9 +1,7 @@
 <?php
-// header("Refresh:1");
-// echo date('H:i:s Y-m-d');
-test();
+display_messages_from_file();
 
-function test(): void
+function display_messages_from_file(): void
 {
     if(file_exists("log.html") && filesize("log.html") > 0)
     {
@@ -12,3 +10,4 @@ function test(): void
             echo $el;
     }
 }
+?>
