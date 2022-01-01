@@ -3,7 +3,7 @@ date_default_timezone_set('Europe/Brussels');
 
 class Database
 {
-    private $_connection;
+    private $_connection = null;
     private static $_instance = null;
     
 private static $DB_DSN = 'mysql:host=localhost;dbname=u870391923_MyDB';
