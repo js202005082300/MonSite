@@ -1,5 +1,4 @@
 <?php
-require '../util.php';
 
 date_default_timezone_set('Europe/Brussels');
 
@@ -8,15 +7,13 @@ class Database
     private $_connection = null;
     private static $_instance = null;
     
-    if(!is_local()){
-        private static $DB_DSN = 'mysql:host=localhost;dbname=u870391923_MyDB';
-        private static $DB_USER = 'u870391923_root';
-        private static $DB_PASS = 'o8jtuHhZPmLXiVUZoj';
-    }else{
-        private static $DB_DSN = 'mysql:host=localhost;dbname=MyDB';
-        private static $DB_USER = 'root';
-        private static $DB_PASS = '';
-    }
+    private static $DB_DSN = 'mysql:host=localhost;dbname=u870391923_MyDB';
+    private static $DB_USER = 'u870391923_root';
+    private static $DB_PASS = 'o8jtuHhZPmLXiVUZoj';
+
+    private static $DB_LOCAL_DSN = 'mysql:host=localhost;dbname=MyDB';
+    private static $DB_LOCAL_USER = 'root';
+    private static $DB_LOCAL_PASS = '';
 
     private function __construct()
     {
@@ -29,7 +26,12 @@ class Database
                 PDO::ATTR_EMULATE_PREPARES => false
             ];
 
-            $this->_connection = new PDO(self::$DB_DSN, self::$DB_USER, self::$DB_PASS, $options);
+            if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == "localhost")
+                $this->_connection = new PDO(self::$DB_LOCAL_DSN, self::$DB_LOCAL_USER, self::$DB_LOCAL_PASS, $options);
+            else
+                $this->_connection = new PDO(self::$DB_DSN, self::$DB_USER, self::$DB_PASS, $options);
+
+
         }
         catch(PDOException $e)
         {
