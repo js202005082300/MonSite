@@ -1,15 +1,5 @@
 <?php
 
-echo '<pre>';
-print_r($_SERVER);
-echo '</pre>';
-
-if ((substr($_SERVER['REMOTE_ADDR'],0,8) == "192.168.") || ($_SERVER['REMOTE_ADDR'] == "127.0.0.1")) {
-    echo 'client is local';
-} else {
-    echo 'client is not local';
-}
-
 class Curl
 {
     private $_ch = null;

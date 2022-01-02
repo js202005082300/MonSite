@@ -36,6 +36,14 @@ function is_admin() : bool
     return false;
 }
 
+function is_local() : bool
+{
+    if(isset($_SERVER['HTTP_POST']) && $_SERVER['HTTP_POST'] == "localhost")
+        return true;
+
+    return false;
+}
+
 function encrypt($pass)
 {
     return $hash = password_hash($pass, PASSWORD_BCRYPT);
