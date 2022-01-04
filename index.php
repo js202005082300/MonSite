@@ -47,7 +47,7 @@ init_php_session();
         <a href="Database/execute.php">Exécuter fichier source MySQL &raquo;</a>
                     </li>
                     <li>
-        <a href="Nederlands/test.php">Test &raquo;</a>
+        <a href="Nederlands/main.php">Nederlands &raquo;</a>
                     </li>
                 </ul>
             </nav>

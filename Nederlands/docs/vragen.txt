@@ -1,0 +1,108 @@
+vragen;antwoord;vertaling;toelichting 
+wie ben je ?;je bent;Qui êtes vous?;null
+wie heeft deze e-mail geschreven ?;dat is Sam;qui a écrit cet e-mail ?;null
+ben jij sam ?;nee, ik ben tom. dit is ludo;êtes-vous sam ?;null
+wie ben jij ?;null;Qui êtes vous?;null
+wie ben je ?;null;Qui êtes vous?;null
+hoe heet je ?;Ik heet Sam;Quel est votre nom?;jij = forme accentué
+hoe heet zij ?;ze heet Barbara;quel est son nom ?;null
+wat is je familienaam ?;null;quel est votre nom de famille ?;null
+hoe spel je zijn familienaam ?;null;comment épelez-vous son nom de famille ?;null
+hoe heet jij ?;null;Quel est votre nom?;null
+en met jouw/en jij ?;null;et toi?;null
+uit welke streek kom je ?;null;de quelle région êtes-vous originaire ?;avec "e" à welke car "de streek"
+uit welke provincie kom je ?;ik kom uit de gemeente van Marchin;de quelle province êtes-vous originaire?;null
+uit welke gemeente kom je ?;null;de quelle municipalité êtes-vous originaire?;null
+uit welk dorp kom je ?;null;De quel village êtes-vous originaire ?;null
+uit welke stad kom je ?;null;De quelle ville êtes-vous originaire ?;null
+uit welke klas kom je ?;null;De quelle classe êtes-vous originaire ?;null
+uit welk land kom je ?;uit Frankrijk.|uit Oekraïne.|Ik kom uit/van België;De quel pays venez-vous?;null
+uit welk land kom jij ?;ik kom uit China. en jij ?;De quel pays venez-vous?;null
+uit welk land komt ze ?;ze komt uit Japan;de quel pays vient-elle?;null
+uit welk land komt hij ?;hij komt uit Oekraïne;de quel pays vient-il ?;null
+hoe gaat het met jou ?;goed! |het gaat wel! |niet zo goed! Slecht!;Comment allez vous?;null
+Mag ik iets vragen ?;graag gedaan;Puis-je demander quelque chose ?;null
+hoe laat vertrekt de volgende bus ?;null;À quelle heure part le prochain bus ?;null
+hoe kom je naar de cursus ?;ik ga met fiets naar kantoor|ik ga van Hoei naar Namen|Ik ga elke dag met de trein naar kantoor;comment se rendre au cours ?;Ordre des compléments : temps – manière – lieu
+hoe ga je naar kantoor ?;null;comment se rendre au bureau ?;null
+hoe komt ze naar school ?;ze komt met de tram naar school;comment vient-elle à l’école ?;null
+hoe komt hij naar school ?;hij komt te voet naar school;comment vient-il à l’école ?;null
+hoe kom jij naar school ?;te voet.|Met de trein.|Met de bus.|Met de metro.|Met de tram.|Met de fiets.|Met de auto.;Comment se rendre à l’école ?;null
+hoeveel kost;null;Combien cela coûte-t-il?;null
+hoe spel je dat ?;Dat wordt als volgt …|dit …;comment épelez-vous cela ?;null
+hoe heet de vrouw van Arthur ?;null;quel est le nom de la femme d’Arthur ?;null
+welke taal spreek je ?;Ik spreek geen russisch;quelle langue parlez-vous ?;null
+welke talen spreekt ze ?;ze spreekt Japans en Engels;quelles langues parle-t-elle?;null
+welke talen spreekt hij ?;hij spreekt Oekraïens en Russisch.;quelles langues parle-t-il ?;null
+welke taal spreek jij ?;Ik spreek Chinees. En jij ?;quelle langue parlez-vous ?;null
+welke talen spreek jij ?;Frans en Nederlands.|ik spreek Chinees en Engels. En jij ?;Quelles langues parlez-vous ?;null
+hoelang woon jij al in België ?;ik woon 5 jaar in België. ik woon nog maar 2 weken in België. en jij ?|nog maar 1 maand (korte perio;Depuis combien de temps vivez-vous ;Hoelang : mot intérrogatif pour la durée|nog maar : une courte période|al : depuis déjàen Belgique ?de)|al 5 jaar (lange periode)|Aurélie woont sinds haar geboorte in Ransart|Olivier-Pascal woont al 10 jaar in België, al 3 jaar opnieuw in Bergen
+hoelang woont hij al in België ?;Nog maar vijf manden. Al tien jaar.;Depuis combien de temps vit-il en Belgique ?;null
+wat is je adres ?;null;quelle est votre adresse ?;null
+Wat is zijn adres ?;zijn adres is… (verder);Quelle est son adresse ?;null
+waar woon jij ?;ik woon in Antwerpen. En jij ?;Où habitez-vous?;w se prononce un peu v
+waar woont ze ?;ze woont in Antwerpen;où habite-t-elle ?;null
+waar woont hij ?;hij woont in Hasselt;où habite-t-il ?;null
+is Baba getrouwd ?;ja, zij is getrouwd|zij is gescheiden;Baba est-il marié ?;null
+ben jij getrouwd ?;ja, ik ben getrouwd|nee, ik ben niet getrouwd|nee, ik ben geschieden|nee, ik woon samen met mijn vriendin/vriend;êtes-vous marié?;null
+met wie ?;Met Nico;Avec qui?;null
+Is hij gescheiden ?;null;Est-il divorcé ?;null
+heeft Sam kinderen ?;ja, hij heeft kinderen;Sam a-t-il des enfants ?;null
+heb jij kinderen ?;ja, ik heb kinderen|nee, ik heb geen kinderen;avez-vous des enfants ?;Heb avec b sonne p
+hoeveel kinderen ?;zij heeft een kind, een meisje;combien d’enfants ?;null
+hoeveel kinderen heb jij ?;ik heb een kind, een jongen/een zoon|ik heb een kind, een meisje/een dochter|ik heb 4 kinderen, 2 jongens;Combien d’enfants avez-vous ? en 2 ;nullmeisjes|ik heb 2 zonen en 2 dochters
+hoeveel kinderen heeft Sam ?;vijf.;Combien d’enfants Sam a-t-il ?;null
+hoeveel cursisten zitten er in de klas ?;Negen.;Combien y a-t-il d’élèves dans la classe?;null
+hoeveel talen spreek jij ?;twee.;Combien de langues parlez-vous ?;null
+hoeveel talen spreekt Sam ?;twee.;Combien de langues Sam parle-t-il ?;null
+hoeveel kost de appel ?;null;combien coûte la pomme ?;null
+wie is dat ?;dat is Sam;C’est qui?;null
+wat is dit ?;hallo dit is Sam|Hij/Zij is…;Qu’est-ce que c est?;null
+wablief ? wat zeg je ?;null;wablief ? qu’en dites-vous ?;null
+ik begrijp het niet. Wat betekent ?;null;Je ne comprends pas. Qu’est-ce que cela signifie ?;null
+hoe spel je dat ?;null;comment épelez-vous cela ?;null
+il versta je niet. kan je trager spreken alsjebl;nullieft ?;si vous ne comprenez pas. pouvez-vous parler plus lentement s’il vous plaît ?;null
+hoe zeg je ?;null;Comment dit-on?;null
+kan je dat herhalen, alsjeblieft ?;null;Pouvez-vous répéter cela, s’il vous plaît?;null
+mag ik iets vragen, alsjeblieft ?;null;puis-je demander quelque chose, s’il vous plaît ?;null
+dag, hoe gaat het (met jou) ?;goed, en met jou ? ook goed !;jour, comment allez-vous ?;null
+hoe is 't ?;goed!|het gaat wel!|niet zo goed!|slecht!;comment ça se passe ?;null
+aangenaam;null;agréable;null
+hie heet hij ?;hij heet Tom Vanbinst;son nom est-il ?;null
+Waar woont hij ?;hij woont in Hasselt, Parkstraat 17;Où habite-t-il ?;null
+Wat is zijn adres ?;zijn adres is… (verder);Quelle est son adresse ?;null
+Wat is zijn telefoonnummer ?;zijn telefoonnummer is 011 22 09 14;Quel est son numéro de téléphone ?;null
+Wat is zijn beroep ?;zijn beroep is tuinman;Quel est son métier ?;null
+Wat is je naam ?;null;Quel est votre nom?;null
+Wat doet hij (in zijn leven) ?;hij is tuinman;Que fait-il (dans sa vie) ?;null
+Wat doet hij in zijn leven ?;null;Que fait-il dans sa vie ?;null
+Is hij getrouwd ?;Ja, hij is getrouwd|Nee, hij is ongetrouwd.;Est-il marié ?;null
+Heeft hij kinderen ?;ja, hij heeft twee kinderen;A-t-il des enfants?;null
+Wat is zijn nationaliteit ?;null;Quelle est sa nationalité ?;null
+Uit welk land komt hij ?;Hij is Belgisch. hij is een Belg. Hij komt uit België;De quel pays vient-il ?;null
+Mag ik slaper hebben ?;null;Puis-je avoir un dormeur?;null
+Drinkt u niets ?;null;Vous ne buvez rien ?;null
+voor wie zijn de cadeau ?;null;à qui s’adressent les cadeaux ?;null
+kom je naar mijn huis ?;null;tu viens chez moi ?;null
+Ben jij dit jaar braaf geweest ?;null;Avez-vous été bon cette année?;null
+kapoentje;null;kapoentje;null
+heb je je schoen gezet ?;null;avez-vous mis votre chaussure ?;null
+hoe laat sta je op ?;null;à quelle heure vous levez-vous ?;null
+wat doe je vanmiddag/vanavond?;null;que faites-vous cet après-midi/ce soir?;null
+hoe laat kan je de serie "Buren" kijken ?;null;à quelle heure pouvez-vous regarder la série 'Neighbors'?;null
+hoe laat begint hij te werken ?;null;à quelle heure commence-t-il à fonctionner?;null
+Mag ik een blad papier krijgen ?;null;Puis-je obtenir une feuille de papier?;ik heb een blad papier nodig
+waar spreken we af ? Hoe laat spreken we af ?;Om 6 uur aan de school (temps - lieu);où nous rencontrons-nous ? A quelle heure nous rencontrons-nous ?;null
+hoe oud ben je ?;null;Quel âge avez-vous?;null
+wat is je geboortedatum ?;null;quelle est votre date de naissance ?;null
+wanneer verjaar je ?;null;Quand fêtez-vous votre anniversaire ?;null
+Wat heb je gekregen ?;null;Qu’avez-vous obtenu ?;null
+Van wie ?;null;Dont?;null
+Ben je ermee blij ?;null;En êtes-vous satisfait ?;null
+Van welk spoor vertrekt de trein ?;de trein vertrek om 10.55 naar Rotterdam;De quelle voie part le train ?;null
+Hoe gaat het verder ?;null;Où allons-nous à partir d’ici?;null
+Woon je ver van het station ?;null;Habitez-vous loin de la gare ?;null
+Hoe laat kom je in Namen aan ?;Ik kom om 8:10 uur met de trein in Namen aan./Met de trein kom ik om 8:10 in Namen aan.;A quelle heure arrivez-vous à Namur ?;null
+Hoe laat begin je te werken ?;null;À quelle heure commencez-vous à travailler ?;null
+Hoe laat ga je slapen ?;null;À quelle heure allez-vous dormir ?;null
+Hoe laat ga je naar bed ?;null;À quelle heure allez-vous vous coucher ?;null

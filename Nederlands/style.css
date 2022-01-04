@@ -1,0 +1,23 @@
+/* Media Queries */
+.container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:"header aside"
+                        "main aside"
+                        "footer aside";
+}
+header{grid-area:header;}
+main{grid-area:main;}
+footer{grid-area:footer;}
+aside{grid-area:aside;}
+@media(max-width:600px), screen and (orientation: portrait)
+{
+    .container
+    {
+        grid-template-columns: 1fr;
+		grid-template-areas:"header"
+							"main"
+                            "aside"
+                            "footer";
+    }
+}

@@ -1,0 +1,85 @@
+infinitief;vertaling;toelichting
+zijn;être;null
+hebben;avoir;prononciation du h|s'appeler est un verbe réflèchi mais pas en néerlandais
+heten;s’appeler;he/ten (1 voyelle dans une syllabe ouverte); heet (2v dans une syllabe fermée) : le son reste long
+vergetten;vergetten;null
+komen;venir;komen=>ik kom (exception)
+leren;apprendre;null
+zeggen;dire;null
+parkeren;parquer;null
+liggen;coucher;null
+geboren worden;naître;null
+spreken;parler;spre/ken (1V dans une syllabe ouverte);spreek (2 voyelles dans une syllabe fermée : le son reste long)
+weten;savoir;null
+kunnen;capacité;null
+mogen;permission;Mag ik|puis-je avoir (permission)
+onderzoeken;examiner;null
+verdienen;gagner de l'argent;null
+winnen;gagner;null
+rekenen;compter/calculer;null
+schrijven;Écrire;V->F
+lezen;lire;Znull>S|le/zen (1 voyelle dans une syllabe ouverte);lees je (2 v dans une syllabe fermée : le son reste long)
+gaan;aller;null
+werken;travailler;null
+zich voor/stellen;s'imaginer;null
+in/vullen;remplir;in:particule séparable
+zich in/schrijven;s'inscrire;Hij/ze/… schrijft zich in voor een cursus Frans
+zich voelen;se sentir;Ze voelt zich niet goed|Ik voel me niet goed = ik ben een beetje ziek
+schrappen;biffer;null
+willen;vouloir;null
+weten;savoir;ik weet het niet
+geven;donner;null
+uitnodigen;Inviter;null
+af/slaan;refuser;Aan de verkeerslichten voor de post sla je rechts af.
+over/steken;traverser;Je steekt dan de straat over en daarna loop je rechtdoor tot het kruispunt.
+af/staan;céder/abandonner;null
+wonen;habiter;wo/nen (1V dans une syllabe ouverte);ik woon (2V dans une syllabe fermée)
+luisteren (naar);écouter (à);null
+herkennen;reconnaître;null
+afhangen van;dépendre de;het hangt ervan af (cela dépend)
+vertreken;partir;null
+aan/komen;arriver;null
+terug/komen;revenir;null
+gooiën;jeter;gooi wat in mijn schoentje/laarste
+klinken;sonner;dat klinkt als …
+rekenen;calculer;null
+aftrekken;soustraire;null
+verdinen;gagner salaire;null
+winen;gagner;null
+ontwikkelen;développer;null
+antwoorden;répondre;antwoord op de vraag (répondez à la question)|een vraag stellen (poser une question)
+vragen;demander;null
+Verwittigen;prévenir;null
+zorgen voor;prendre soin de/s’occuper de;Zorg voor jezelf. Zorg voor de anderen
+raadplegen;consulter;null
+langs/komen;passer;dan kom ik vanavond even langs
+drinken;boire;null
+eyen;manger;null
+op café gaan/iets ga;an drinaller au; cafékennull
+af/spreken;convenir ou fixer un rdv;null
+herdenken;commémorer;null
+denken;penser;null
+vechten;se battre;null
+volgen;suivre;Hij volgt Annie naar de conferentiekamer
+uit/nodigen;inviter;Zaterdag geef ik een feestje. Ik nodig je uit.
+fietsen;faire du vélo;fiets jij bijna elke dag ?
+kiezen;choisir;Wij kiezen voor een groot feest.
+betalen;payer;mijn man betaalt nooit!
+blijven;rester;jullie blijven vannacht slapen.
+verliezen;perdre;zij verliest altijd bij Scrabble.
+vergeten;oublier;ik vergeet altijd de vuilbak buiten te zetten.
+trouwen;épouser;Joepie! Wij trouwen binnenkort.
+slapen;dormir;Hij slaapt altijd heel land.
+kopen;acheter;Morgen koop ik die CD van Eels.
+kennen;savoir;ken je de theorie van Socrates ?
+lopen;marcher;jij loopt wel heel erg snel !
+redden;sauver/sauvegarder;de brandweerman redt de kat uit de boom.
+sturen;envoyer;u stuurt niet goed.
+bieden;offrir;biedt u ons een drankje aan ?
+overtreden;transgresser;overtreed jij soms de wet ?
+kleden;s'habiller;hij kleedt zijn kinderen elke ochtend.
+durven;oser;dat meisje duurft de straat niet oversteken.|mijn moeder duurft niet springen.
+koken;cuisiner;s Avonds koken we samen.
+rijden;chevaucher;ik rijd graag met de auto.
+zien;voir;zie je die lichtjes daar ?
+reizen;voyager;ik reis graag met de auto.

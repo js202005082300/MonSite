@@ -30,8 +30,6 @@ class Database
                 $this->_connection = new PDO(self::$DB_LOCAL_DSN, self::$DB_LOCAL_USER, self::$DB_LOCAL_PASS, $options);
             else
                 $this->_connection = new PDO(self::$DB_DSN, self::$DB_USER, self::$DB_PASS, $options);
-
-
         }
         catch(PDOException $e)
         {
