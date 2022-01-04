@@ -62,9 +62,9 @@ class Curl
 
     <main>
         <form class="woord_form" name="woord_form" action="" method="post">
-            <fieldset form="client_form">
+            <fieldset form="woord_form">
                 <legend>Vul in met een woord of een werkwoord</legend>
-                <input type="text" class="woord_woord" name="woord_woord" size="55">
+                <input type="text" class="woord_woord" name="woord_woord" size="35">
                 <input type="submit" name="valid_woord" class="valid_woord" value="valider">
             </fieldset>
         </form>
@@ -90,8 +90,8 @@ function changer2URL() {
             <nav>
                 <li><a href="https://www.mijnwoordenboek.nl/">https://www.mijnwoordenboek.nl/</a></li>
                 <li><a href="https://www.welklidwoord.be/">https://www.welklidwoord.be/</a></li>
-                <li><a href="https://translate.google.be/?hl=fr&sl=nl&tl=fr&op=translate">NL>FR (translate.google.be)</a></li>
-                <li><a href="https://translate.google.be/?hl=fr&sl=fr&tl=nl&op=translate">FR>NL (translate.google.be)</a></li>
+                <li><a href="https://translate.google.be/?hl=fr&sl=nl&tl=fr&op=translate" target="_blank">NL>FR (translate.google.be)</a></li>
+                <li><a href="https://translate.google.be/?hl=fr&sl=fr&tl=nl&op=translate" target="_blank">FR>NL (translate.google.be)</a></li>
             </nav>
         </div>
     </footer>

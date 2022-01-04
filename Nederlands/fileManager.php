@@ -1,8 +1,50 @@
 <?php
-
+define('ROWS', 10);
 $data = csv_to_array_03('docs/woorden.csv');
-// benchmark();
-array_display($data);
+// array_display($data);
+$i=0;
+$j = 0;
+// shuffle($data);
+
+?>
+
+<form class="oefening_form" name="oefening_form" action="" method="post">
+<fieldset form="oefening_form">
+    <legend>Oefening en woordenschat</legend>
+
+<?php
+echo '<div>';
+    for(; $i < ROWS; $i++)
+    {
+        echo $data[$i]['vertaling'].'<br>';
+        echo '<input type="text" class='.$i.' name='.$i.' size="25">';
+        if(isset($_POST[$i]) && !empty($_POST[$i]))
+        {
+            if($_POST[$i] == $data[$i]['woord'])
+            {
+                $data[$i]['test'] = 1;
+                echo '<strong>Prima !</strong></br>
+                    '.$data[$i]['woord'].' ('.$data[$i]['woorden'].') = '.$data[$i]['vertaling'];
+                if($data[$i]['bijvoorbeld'])
+                    echo '<br>bvb : '.$data[$i]['bijvoorbeld'];
+                if($data[$i]['toelichting'])
+                    echo '<br>'.$data[$i]['toelichting'];
+
+                $_POST = array();
+            }
+            else
+                echo '<strong>Error : </strong>'.$data[$i]['woord'];
+        }
+        echo '<br>';
+    }
+echo '</div>';
+?>
+
+    <input type="submit" name="valid_oefening" class="valid_oefening" value="valider">
+</fieldset>
+</form>
+
+<?php
 
 //---------------------------------------
 
