@@ -1,6 +1,8 @@
 <?php
-define('ROWS', 10);
+define('ROWS', 5);
 $data = csv_to_array_03('docs/woorden.csv');
+array_to_csv($data,'docs/woorden2.csv');
+// $_POST = array();
 // array_display($data);
 $i=0;
 $j = 0;
@@ -18,24 +20,29 @@ echo '<div>';
     {
         echo $data[$i]['vertaling'].'<br>';
         echo '<input type="text" class='.$i.' name='.$i.' size="25">';
-        if(isset($_POST[$i]) && !empty($_POST[$i]))
-        {
-            if($_POST[$i] == $data[$i]['woord'])
+        if(isset($_POST['valid_oefening']) && !empty($_POST['valid_oefening']))
+            if(isset($_POST[$i]) && !empty($_POST[$i]))
             {
-                $data[$i]['test'] = 1;
-                echo '<strong>Prima !</strong></br>
-                    '.$data[$i]['woord'].' ('.$data[$i]['woorden'].') = '.$data[$i]['vertaling'];
-                if($data[$i]['bijvoorbeld'])
-                    echo '<br>bvb : '.$data[$i]['bijvoorbeld'];
-                if($data[$i]['toelichting'])
-                    echo '<br>'.$data[$i]['toelichting'];
-
-                $_POST = array();
+                if($_POST[$i] == $data[$i]['woord'])
+                {
+                    $data[$i]['test'] = 1;
+                    echo '<strong>Prima !</strong></br>
+                        '.$data[$i]['woord'].' ('.$data[$i]['woorden'].') = '.$data[$i]['vertaling'];
+                    if($data[$i]['bijvoorbeld'])
+                        echo '<br>bvb : '.$data[$i]['bijvoorbeld'];
+                    if($data[$i]['toelichting'])
+                        echo '<br>'.$data[$i]['toelichting'];
+                }
+                else
+                    echo '<strong>False : </strong>'.$data[$i]['woord'];
+                
             }
             else
-                echo '<strong>Error : </strong>'.$data[$i]['woord'];
-        }
-        echo '<br>';
+            {
+                echo '<strong>Niets !</strong>';
+            }
+
+            echo '<br>';
     }
 echo '</div>';
 ?>
@@ -47,6 +54,19 @@ echo '</div>';
 <?php
 
 //---------------------------------------
+
+function array_to_csv(array $arr, string $path) : void
+{
+    // $myFile = fopen($path, 'w');
+  
+    foreach($arr as $el){
+        echo $el;
+        break;
+        fputcsv($myFile, $el);
+    }
+      
+    // fclose($myFile);
+}
 
 function csv_to_array_01(string $path) : array
 {
@@ -142,7 +162,7 @@ function array_display($a) : void
     echo '</pre>';
 }
 
-function benchmark() : void
+function test_benchmark() : void
 {
     $debut = microtime(true); 
     $data = csv_to_array_01("docs/woorden.csv");

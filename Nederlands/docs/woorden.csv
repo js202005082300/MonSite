@@ -1,29 +1,26 @@
 woord,woorden,vertaling,bijvoorbeld,toelichting,test
-de ambtenaar,ambtenaren,fonctionnaire,,,0
-het landbouw,landbouwen,agriculture,,,0
-de kennis,kenissen,connaissance,,,0
-de architect,architecten,architecte,ik ben geen architect,,0
-de informaticus,,informaticien,ik ben informaticus,,0
-de computerwetenschapper,computerwetenschappers,informaticien,,,0
-de doctor,,médecin,ik ben geen doctor,,0
-de wetenschap,wetenschappen,science,een computer wetenschap,,0
-de wetenschapper,wetenschappers,scientifique,,,0
-de man,mannen,mari,ze eet haar mannetje altijd op.,man/nen (1V dans une syllabe fermée : le son reste court au pluriel),0
-de student,studenten,étudiant,Ik ben student nu in Nederlands,,0
-de cursist,cursisten,étudiant,ik ben cursist|de cursist van Anne,,0
-de klas,klassen,salle de cours,in de klas/cursusklas van Anne,,0
-de broer,broers,Frère,,pluriel en -s.,0
+de ambtenaar,ambtenaren,le fonctionnaire,,,0
+het landbouw,landbouwen,l'agriculture,,,0
+de kennis,kenissen,la connaissance,,,0
+de architect,architecten,l'architecte,ik ben geen architect,,0
+de informaticus/de computerwetenschapper,computerwetenschappers,l'informaticien,ik ben informaticus,,0
+de doctor,,le médecin,ik ben geen doctor,,0
+de wetenschap,wetenschappen,la science,een computer wetenschap,,0
+de wetenschapper,wetenschappers,le scientifique,,,0
+de man,mannen,le mari,ze eet haar mannetje altijd op.,man/nen (1V dans une syllabe fermée : le son reste court au pluriel),0
+de student/de cursist,studenten/cursisten,l'étudiant,ik ben student nu in Nederlands/ik ben cursist/de cursist van Anne,,0
+de klas,klassen,la salle de cours,in de klas/cursusklas van Anne,,0
+de broer,broers,le frère,,pluriel en -s.,0
 de oom,ooms,l'oncle,,pluriel en -s.,0
 de zoon,zonen,le fils,,,0
 de dochter,dochters,la fille,,pluriel en -s.,0
-de vader,vaders,Père,,pluriel en -s.,0
-het kind,kinderen,enfant,een kind van drie jaar,,0
-de tweeling,tweelingen,Jumeau,,,0
-het jaar,jaren,année,het kind is 3 jaar|ik ben 51 jaar oud,,0
-uit,,de,ik ben uit Italië,de:appartenance,0
-van,,de,ik ben van Italië,de:de,0
-het geleden,,il y a/la dernière fois,3 jaar geleden,,0
-de naam,namen,nom,ik heb de naam vergetten,na/men (1V dans une syllabe ouverte)|naam (2V dans une syllabe fermée),0
+de vader,vaders,le père,,pluriel en -s.,0
+het kind,kinderen,l'enfant,een kind van drie jaar,,0
+de tweeling,tweelingen,le jumeau,,,0
+het jaar,jaren,l'année,het kind is 3 jaar|ik ben 51 jaar oud,,0
+uit/van,,de,ik ben uit/van Italië,(uit=appartenance),0
+het geleden,,il y a,3 jaar geleden,,0
+de naam,namen,le nom,ik heb de naam vergetten,na/men (1V dans une syllabe ouverte)|naam (2V dans une syllabe fermée),0
 de dienst,diensten,service,dezelfde dienst (le même service)|op dienst (en service),,0
 dezelfde/hetzelfde,,le/la même(s),,,0
 Italië,,Italie,ze komt uit Italië,,0
