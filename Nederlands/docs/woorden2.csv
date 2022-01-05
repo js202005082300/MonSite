@@ -1,13 +1,5 @@
 woord,woorden,vertaling,bijvoorbeld,toelichting,test
-de ambtenaar,ambtenaren,le fonctionnaire,,,0
-het landbouw,landbouwen,l'agriculture,,,0
-de kennis,kenissen,la connaissance,,,0
-de architect,architecten,l'architecte,ik ben geen architect,,0
 de informaticus/de computerwetenschapper,computerwetenschappers,l'informaticien,ik ben informaticus,,0
-de doctor,,le médecin,ik ben geen doctor,,0
-de wetenschap,wetenschappen,la science,een computer wetenschap,,0
-de wetenschapper,wetenschappers,le scientifique,,,0
-de man,mannen,le mari,ze eet haar mannetje altijd op.,man/nen (1V dans une syllabe fermée : le son reste court au pluriel),0
 de student/de cursist,studenten/cursisten,l'étudiant,ik ben student nu in Nederlands/ik ben cursist/de cursist van Anne,,0
 de klas,klassen,la salle de cours,in de klas/cursusklas van Anne,,0
 de broer,broers,le frère,,pluriel en -s.,0
@@ -88,7 +80,6 @@ iets,,quelque chose,vertel iets over jezelf,,0
 nog iets,,autre chose,,,0
 nog niet/geen,,pas encore/aucun,nog geen kinderen,,0
 niet,,non,Ik ben niet getrouwd.,niet devant l'adjectif attribut (Ik ben niet getrouwd),0
-geen,,non,Ik heb geen 4 kinderen. Ik spreek geen Russisch. Ik ben geen dokter.|geen + langues/métiers/nombres|geen + noms indéfinis (ik heb geen kin,0deren).,
 ik,,je,ik ben,k suivi de b sonne g,0
 negen,,neuf,het is negen uur,,0
 goedemiddag,,Bonne après-midi,,,0
@@ -558,3 +549,11 @@ tussen,,entre,Tussen 8 uur en halfnegen,,0
 meestal,,généralement,,,0
 opnieuw,,à nouveau,Hij woont al 10 jaar in België/al 3 jaar opnieuw in Bergen.,,0
 nu,,maintenant,,,0
+de doctor,,le médecin,ik ben geen doctor,,1
+de wetenschap,wetenschappen,la science,een computer wetenschap,,1
+de wetenschapper,wetenschappers,le scientifique,,,1
+de man,mannen,le mari,ze eet haar mannetje altijd op.,man/nen (1V dans une syllabe fermée : le son reste court au pluriel),1
+de ambtenaar,ambtenaren,le fonctionnaire,,,1
+het landbouw,landbouwen,l'agriculture,,,1
+de kennis,kenissen,la connaissance,,,1
+de architect,architecten,l'architecte,ik ben geen architect,,1
