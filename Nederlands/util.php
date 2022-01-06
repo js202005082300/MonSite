@@ -11,8 +11,12 @@ function sort_array_by_test(array $arr) : array
             array_push($a2, $el);
     }
 
+    $a1[array_key_first($a1)]['test'] .= "\n";
+
     foreach($a2 as $el)
         array_push($a1, $el);
+
+    substr($a1[array_key_last($a1)]['test'], -1);
 
     return $a1;
 }
@@ -99,7 +103,7 @@ function csv_to_array_03(string $path) : array
     $head = explode(",", trim(fgets($myFile), "\r\n"));
     while(!feof($myFile))
         array_push($data, array_combine($head, explode(',', fgets($myFile))));
-    
+
     if(!fclose($myFile))
         exit("Fermeture du fichier echouee");
     else

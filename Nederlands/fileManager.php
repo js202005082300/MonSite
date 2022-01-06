@@ -14,6 +14,7 @@ $data = csv_to_array_03('docs/woorden2.csv');
 
 <?php
 echo '<div>';
+echo '<style>.green{text-decoration-color:green;}.red{text-decoration-color:red;}</style>';
 
     for($i=0; $i < ROWS; $i++)
     {
@@ -22,11 +23,11 @@ echo '<div>';
         {
             if(isset($_POST[$i]) && !empty($_POST[$i]))
             {
-                echo '<input type="text" class='.$i.' name='.$i.' placeholder="'.$_POST[$i].'" size="25">';
                 if($_POST[$i] == $data[$i]['woord'])
                 {
+                    echo '<input type="text" class="'.$i.' green" name='.$i.' placeholder="'.$_POST[$i].'" size="25">';
                     $data[$i]['test'] = "1"."\n";
-                    echo '<em>Prima !</em></br>
+                    echo '<em>Juist, prima !</em></br>
                         '.$data[$i]['woord'].' ('.$data[$i]['woorden'].') = '.$data[$i]['vertaling'];
                     if($data[$i]['bijvoorbeld'])
                         echo '<br>bvb : '.$data[$i]['bijvoorbeld'];
@@ -35,7 +36,8 @@ echo '<div>';
                 }
                 else
                 {
-                    echo '<em>False : </em>'.$data[$i]['woord'];
+                    echo '<input type="text" class="'.$i.' red" name='.$i.' placeholder="'.$_POST[$i].'" size="25">';
+                    echo '<em>Niet juist : </em>'.$data[$i]['woord'];
                 }
                 
             }
