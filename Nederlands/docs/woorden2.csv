@@ -1,6 +1,14 @@
 woord,woorden,vertaling,bijvoorbeld,toelichting,test
+de ambtenaar,ambtenaren,le fonctionnaire,,,0
+het landbouw,landbouwen,l'agriculture,,,0
+de kennis,kenissen,la connaissance,,,0
+de architect,architecten,l'architecte,ik ben geen architect,,0
 de informaticus/de computerwetenschapper,computerwetenschappers,l'informaticien,ik ben informaticus,,0
-de student/de cursist,studenten/cursisten,l'étudiant,ik ben student nu in Nederlands/ik ben cursist/de cursist van Anne,,0
+de doctor,,le médecin,ik ben geen doctor,,0
+de wetenschap,wetenschappen,la science,een computer wetenschap,,0
+de wetenschapper,wetenschappers,le scientifique,,,0
+de man,mannen,le mari,ze eet haar mannetje altijd op.,man/nen (1V dans une syllabe fermée : le son reste court au pluriel),0
+de student/studente/de cursist,studenten/cursisten,l'étudiant,ik ben student nu in Nederlands/ik ben cursist/de cursist van Anne,,0
 de klas,klassen,la salle de cours,in de klas/cursusklas van Anne,,0
 de broer,broers,le frère,,pluriel en -s.,0
 de oom,ooms,l'oncle,,pluriel en -s.,0
@@ -27,230 +35,222 @@ Nederland,,Pays-Bas,,,0
 Japan,,Japon,,,0
 de taal,talen,langue,,ta/len (1 voyelle dans une syllabe ouverte : le son reste long)|taal (2V dans une syllabe fermée),0
 meertalig,,multilingue,,,0
-franstalig,,Francophone,Ik ben Franstallig,,0
-nederlandstalig,,le néerlandais,,,0
-duitstalig,,l'allemand,,,0
+Franstalig,,francophone,Ik ben Franstallig,,0
+Nederlandstalig,,néerlandophone,,,0
+Duitstalig,,germanophone,,,0
 Fins,,finnois,ik spreek geen Fins (je ne parle pas finnois),,0
 Pools,,polonais,,,0
-zweeds,,suédois,,,0
-duits,,Allemand,,,0
-Italiaans,,Italien,je bent Italiaans|ik spreek Italiaans,,0
-nederlands,,néerlandais,ik spreek nederlands|ze leert Nederlands|de nederlands princess (la princesse hollandaise), "s" à l'adjectif ou à la langue,0
+Zweeds,,suédois,,,0
+duits,,allemand,,,0
+italiaans,,italien,je bent Italiaans|ik spreek italiaans,,0
+nederlands,,néerlandais,ik spreek nederlands|ze leert nederlands|de nederlands princess (la princesse hollandaise), "s" à l'adjectif ou à la langue,0
 Nederland,,Pays-Bas,,,0
-Belgisch,,Belge,,,0
-russisch,,Russe,hij spreekt russisch en nu ook Nederlands,,0
-Spaans,,Espagnol,ik spreek Spaans,,0
-Chinees,,chinois,ik spreek Chinees,,0
-Engels,,anglais,ik spreek Engels,,0
-Frans,,français,en wat Frans (et un peu français)|ik ben alleen Frans,,0
-Japans,,japonais,,,0
-moedertaal,moedertalen,langue maternelle,mijn moedertaal is Frans,,0
+belgisch,,belge,,,0
+russisch,,Russe,hij spreekt russisch en nu ook nederlands,,0
+spaans,,espagnol,ik spreek spaans,,0
+chinees,,chinois,ik spreek chinees,,0
+engels,,anglais,ik spreek engels,,0
+frans,,français,en wat Frans (et un peu français)|ik ben alleen frans,,0
+japans,,japonais,,,0
+moedertaal,moedertalen,langue maternelle,mijn moedertaal is frans,,0
 Vlaanderen,,Flandre,,,0
 Wallonië,,Wallonie,,,0
 het gewest,gewesten,région,Het Waals Gewest/Het Vlaamse Gewest,sens administratif plutôt que région,0
-Vlaams Brabant,,Brabant flamand,,,0
+Vlaams Brabant,,Brabant Flamand,,,0
 waals,walen,Wallon,,,0
-vlaams,,Flamand,,,0
+vlaams,vlamingen,flamand,,,0
 de/het,,le/la/l'/les,het meisje/het kind,,0
 dat,,cela,Hij staat dat geparkeerd,,0
-het huis,huizen,maison,gemeente huis (maison communale),,0
-het land,landen,pays,uit welk land,pas de "e" à welk,0
-de stad,steden,ville,,,0
-de hoofdstad,hoofsteden,capital,,,0
-het hoofdstedelijk,,Capital,Het Brussels Hoofdstedelijk gewest (region bruxelles capitale),adjectif pour la capital,0
-het dorp,dorpen,village,,,0
-de streek,streken,région,uit welke streek kom je ?,pas dans le sens administratif,0
-de regio,regio's,la région,,région dans sens administratif.,0
-de plaats,plaatsen,lieu,,,0
-de woonplaats,woonplaatsen,résidence,,,0
-het transport,transporten,transport,,,0
-de provincie,provincies,province,in de provincie Luik,,0
-het namelijk,,nommément,m,m (namelijk dans le dico),0
-vrouwlijk,,femelle,v,v (vrouwlijk dans le dico),0
+het huis,huizen,la maison,gemeente huis (maison communale),,0
+het land,landen,le pays,uit welk land,pas de "e" à welk,0
+de stad,steden,la ville,,,0
+de hoofdstad/het hoofdstedelijk,hoofsteden,la capital,Het Brussels Hoofdstedelijk gewest (region bruxelles capitale)|het hoofdstedelijk gewest,(adjectif pour la capital),0
+het dorp,dorpen,le village,,,0
+de streek/de regio,streken/regio's,la région,uit welke streek kom je ?,sens administratif pour 'regio' mais pas 'streek',0
+de plaats,plaatsen,le lieu,,,0
+de woonplaats,woonplaatsen,la résidence,,,0
+het transport,transporten,le transport,,,0
+de provincie,provincies,la province,in de provincie Luik,,0
+mannelijk,,masculin,m,m (mannelijk dans le dico),0
+vrouwlijk,,féminin,v,v (vrouwlijk dans le dico),0
 neutraal,,neutre,o,o (neutre dans le dico),0
 Hoei,,Huy,ik ga van Hoei naar Namen,,0
 Luik,,Liège,de stad Luik ligt in de provincie Luik,,0
-Namen,,Namur,Ik woon in Namen.,,0
+Namen,,Namur,ik woon in Namen,,0
 Henegouwen,,Hainaut,,,0
 Antwerpen,,Anvers,,,0
 de gemeente,gemeenten,commune,,,0
-de hoofdstad,hoofdsteden,capital,,,0
 de wereld,werelden,monde,,,0
 iets,,quelque chose,vertel iets over jezelf,,0
 nog iets,,autre chose,,,0
 nog niet/geen,,pas encore/aucun,nog geen kinderen,,0
-niet,,non,Ik ben niet getrouwd.,niet devant l'adjectif attribut (Ik ben niet getrouwd),0
+niet,,non,ik ben niet getrouwd,niet + l'adjectif attribut (Ik ben niet getrouwd),0
+geen,,non,ik heb geen 4 kinderen/ik spreek geen Russisch/ik ben geen dokter,geen + langues/métiers/nombres|geen + noms indéfinis (ik heb geen kinderen),0
 ik,,je,ik ben,k suivi de b sonne g,0
 negen,,neuf,het is negen uur,,0
-goedemiddag,,Bonne après-midi,,,0
-goedenamiddag,,Bonne après-midi,,,0
-goedemorgen,,Bonjour,goedemorgen allemaal (bonjour à tous),,0
-het papier,papieren,papier/documentation,,,0
-het formulier,formulieren,formulaire,,,0
-de geboorte,geboorten,la naissance,Hij woont sinds zijn/haar geboorte in Marchin.,,0
-de naam,namen,nom,met je naam op (avec ton nom dessus),2 voyelles dans une syllabe fermée : le son reste long,0
-de voornaam,voornamen,prénom,de populairste voornaam,,0
-het land,landen,pays,,,0
+goedemiddag,,bonne après-midi,,,0
+goedenamiddag,,bonne après-midi,,,0
+goedemorgen,,bonjour,goedemorgen allemaal (bonjour à tous),,0
+het papier,papieren,la documentation,,,0
+het formulier,formulieren,le formulaire,,,0
+de geboorte,geboorten,la naissance,hij woont sinds zijn/haar geboorte in Marchin,,0
+de naam,namen,le nom,met je naam op (avec ton nom dessus),2 voyelles dans une syllabe fermée : le son reste long,0
+de voornaam,voornamen,le prénom,de populairste voornaam,,0
 getrouwd/gehuwd,,marié,ik ben niet getrouwd,,0
 alleenstand/ongetrouwd,,célibataire,Ik ben alleenstand,,0
 gescheiden,,divorcé,,,0
 samenwonend,,cohabitant,,,0
-het samen,,ensemble,Ik woon wettelijk samen met mijn vriendin,,0
-de weduwd/weduwnaar,weduwden,veuf,,,0
-het kind,kinderen,enfant,ik heb geen kinderen,,0
+samen,,ensemble,ik woon wettelijk samen met mijn vriendin,,0
+de weduwd/weduwnaar,weduwden,le veuf,,,0
+het kind,kinderen,l'enfant,ik heb geen kinderen,,0
 de jongen,jongens,le garçon,,pluriel en -s.,0
-het meisje,meisjes,fille,,,0
-de zoon,zonen,Fils,,,0
-de dochter,dochters,Fille,,,0
-de periode,perioden,période,de periode in België,,0
+het meisje,meisjes,la fille,,,0
+de zoon,zonen,le fils,,,0
+de dochter,dochters,la fille,,,0
+de periode,perioden,la période,de periode in België,,0
 tot nu toe,,jusqu’à présent,,,0
 tot straks,,à bientôt,,,0
-het land,landen,terre/pays,,,0
+het land,landen,la terre/le pays,,,0
 enzovoort,,et cetera,,,0
-het masker,maskers,masque buccal,mond masker,,0
+het masker,maskers,le masque,het mond masker,,0
 de referencie/de verwijzing,verwijzingen,la référence,Dat is een referencie aan,,0
-het beetje,,mors,een beetje,,0
+het beetje,,la petite quantité,een beetje,,0
 de laat,,le niveau/tard,de laat is hoog (le niveau est haut),,0
-geen,,non,,négation devant les langues/métiers/chiffres/noms indéfinis.,0
 ook,,aussi,,,0
 al,,déjà,al leven (depuis toute ma vie),,0
-het cijfer,cijfers,Chiffres,,,0
-het getal,getallen,nombre,,,0
+het cijfer,cijfers,le chiffre,,,0
+het getal,getallen,le nombre,,,0
 gemiddeld,,(en) moyenne,,,0
 minstens,,au moins,,,0
 het meest > het minst,,le plus > le moindre,,,0
 het hoogst > het laagst,,le plus élevé > le plus bas,,,0
-de baas/de leider,bazen,patron,,,0
-de werknemer,werknemers,employé,,,0
-het loon/het salaris,lonen/salarissen,salaire,,,0
-de aftrek,aftrekken,déduction,,,0
-de euro,euro,euro,de bureaustoel kost vierenzestig euro,pas de s,0
-vijftig cent|één half euro,,50 cent,,,0
+de baas/de leider,bazen,le patron,,,0
+de werknemer,werknemers,l'employé,,,0
+het loon/het salaris,lonen/salarissen,le salaire,,,0
+de aftrek,aftrekken,la déduction,,,0
+de euro,euro,l'euro,de bureaustoel kost vierenzestig euro,pas de s,0
+vijftig cent/één half euro,,50 cent,,,0
 honder dertien,,cent treize,,on ne dit plus le (en) à partir de 13,0
 duizend dertien,,mille treize,,on ne dit plus le (en) à partir de 13,0
 kwart over tien,,10h15,,,0
 kwart voor tien,,09h45,,,0
-twintig voor twalf,,11h40,Het is twintig voor twalf,,0
+twintig voor twalf,,11h40,het is twintig voor twalf,,0
 elf uur veertig,,11h40,het is elf uur veertig,,0
 veertig over elf,,11h40,het is veertig over elf,,0
 alleen,,seul/seulement,alleen Nedelands,,0
-graag gedaan,,De rien/avec plaisir,,,0
-ik weet het niet,,Je ne sais pas,,,0
-ik verstand niet,,Ça ne me dérange pas,,contexte langue,0
-ik snap niet,,Je ne comprends pas,,je ne pige pas,0
-ik begrijp niet,,Je ne comprends pas,,contexte hors langue,0
-het kantoor,kantoren,bureau,,,0
+graag gedaan,,de rien/avec plaisir,,,0
+ik weet het niet,,je ne sais pas,,,0
+ik verstand niet,,ça ne me dérange pas,,contexte langue,0
+ik snap niet,,je ne pige pas,,,0
+ik begrijp niet,,je ne comprends pas,,contexte hors langue,0
+het kantoor,kantoren,le bureau,,,0
 de cursus,cursussen,le cours,,,0
-de opleiding,opleidingen,formation,,,0
+de opleiding,opleidingen,la formation,,,0
 het centrum,centrums,le centre,het stad centrum|het opleiding centrum,,0
-in,,dans/à,,lieu,0
-naar,,à,,lieu déplacement,0
-met,,avec,,avec (+article +moyen de déplacement),0
+in,,dans/à,,à + lieu,0
+naar,,à,,à + lieu + déplacement,0
+met,,avec,,avec + article + moyen de déplacement),0
 Brussel,,Bruxelles,in Brussel,pas de s,0
-dat klopt,,C’est juste/c'est exacte,,,0
-de informatie,,information,de informatie is niet juist,,0
-bedank,,Remercier,,,0
-de vrouw,vrouwen,femme,over de vrouw (à propos de la femme),,0
-de medecursist,medecursisten,coétudiant/costagiaire,,,0
-medewerker,,employé,,,0
-de wet,wetten,loi,,,0
-de gegevens,gegevens,donné(es),persoonlijke gegevens,,0
-de letter,letters,lettre,drukletters (masjuscules),,0
+dat klopt,,c’est juste/c'est exacte,,,0
+de informatie,,l'information,de informatie is niet juist,,0
+bedank,,remercier,,,0
+de vrouw,vrouwen,la femme,over de vrouw (à propos de la femme),,0
+de medecursist,medecursisten,le coétudiant/costagiaire,,,0
+de medewerker,,l'employé,,,0
+de wet,wetten,la loi,,,0
+de gegevens,gegevens,la donnée,persoonlijke gegevens,,0
+de letter,letters,la lettre,drukletters (masjuscules),,0
 alstublieft (AUB),,s'il vous plaît,,<als het u blieft,0
-hallo,,Bonjour,,,0
-de groet,groeten,salutation/légumes,groetjes/Met vriendelijke groeten (MVG),,0
+hallo,,bonjour,,,0
+de groet,groeten,la salutation/le légume,groetjes/met vriendelijke groeten (MVG),,0
 daarom,,donc/c'est pourquoi,,,0
-de fabriek,fabrieken,biscuiterie,koekjesfabriek,,0
+de fabriek,fabrieken,la biscuiterie,koekjesfabriek,,0
 verder,,en outre/continue,,,0
-het blad,bladen,feuille,het groene blad,,0
-de maand,maanden,mois,volgende maand,,0
-het jaar,jaren,année,vorig jaar,,0
-de trein,treinen,train,met de trein,,0
-de bus,bussen,bus,met de bus,,0
-de metro,metro's,métro,met de metro,,0
-de tram,trams,tramway,met de tram,pluriel en -s.,0
-de fiets,fietsen,bicyclette,met de fiets,,0
-de auto,autos,voiture,met de auto en mijn auto staat in de parkeerplaats,,0
-de voet,voeten,pied,te voet,,0
+het blad,bladen,la feuille,het groene blad,,0
+de maand,maanden,le mois,volgende maand,,0
+het jaar,jaren,l'année,vorig jaar,,0
+de trein,treinen,le train,met de trein,,0
+de bus,bussen,le bus,met de bus,,0
+de metro,metro's,le métro,met de metro,,0
+de tram,trams,le tramway,met de tram,pluriel en -s.,0
+de fiets,fietsen,la bicyclette,met de fiets,,0
+de auto,autos,la voiture,met de auto en mijn auto staat in de parkeerplaats,,0
+de voet,voeten,le pied,te voet,,0
 goedemoegen,,bonjour,,,0
-goedemiddag,,Bonne après-midi,,,0
-goedenavond,,Bonsoir,,,0
-de dag,dagen,Jour,dag meneer|dag mevrouw,,0
-goeiedag,,Bonne journée,,,0
+goedemiddag,,bonne après-midi,,,0
+goedenavond,,bonsoir,,,0
+de dag,dagen,le jour,dag meneer|dag mevrouw,,0
+goeiedag,,bonne journée,,,0
 morgen,,demain,morgen ochtend (demain matin),,0
-tot morgen,,À demain,,,0
+tot morgen,,à demain,,,0
 tot vrijdag,,jusqu’à vendredi,,,0
-de kerstmis,,Noël,25 december,,0
-de kerstvakantie,,Vacances de Noël,,kerst-,0
-de kerstboom,,Arbre de Noël,een gigantisch kerstboom,,0
-de kerstman,,Père Noël,,,0
-de kerstsfeer,sferen,Ambiance de Noël,,,0
-de mis,missen,messe,,,0
-de grotemarkt,markten,grand marché,op de grotemarkt in Brussel,,0
-de reportage,,Rapport,,,0
-bal,ballen,boule/ballon,40 ballen kerstballen,,0
-slinger,,guirlandes,licht slinger,,0
+de kerstmis,,la Noël,25 december,,0
+de kerstvakantie,,les vacances de Noël,,kerst-,0
+de kerstboom,,l'arbre de Noël,een gigantisch kerstboom,,0
+de kerstman,,le Père Noël,,,0
+de kerstsfeer,sferen,l'ambiance de Noël,,,0
+de mis,missen,la messe,,,0
+de grotemarkt,markten,le grand marché,op de grotemarkt in Brussel,,0
+de reportage,,le rapport,,,0
+het/de bal,ballen,la boule/le ballon,40 ballen kerstballen,,0
+de slinger,,la guirlande,licht slinger,,0
 vol,,rempli de,vol decoraties,,0
-het conferentiezal,,conférence,,,0
-de kamer,kamers,chambre,de conferentiekamer (Salle de conférence),,0
-de advertentie,advertenties,offre d'emploi/publicité,,,0
-de koffie,koffies,café,een kopje koffie,<contenant> puis <contenu>,0
-het rechts/links,,droite/gauche,de conferentiekamer is rechts,,0
-de leerkracht,leerkrachten,enseignant,,,0
-de leraar/lerares,leraren,enseignant,,,0
-de student/studente,studenten,étudiant,,,0
-de ingenieur,ingenieurs,ingénieur,,,0
-de collega,collega's,collègue,,,0
-de vrouw,vrouwen,Femme,,,0
-de man,mannen,Mari,,,0
-de moeder,moeders,Mère,,,0
-de vader,vaders,Père,,,0
-het meisje,meisjes,fille,,je : diminutif des het-word,0
-de jongen,jongens,garçon,,,0
-het kind,kinderen,enfant,,,0
-goedemorgen,,Bonjour,,,0
-goedemiddag,,Bonne après-midi,,,0
-goedenamiddag,,Bonne après-midi,,,0
-goedenavond,,Bonsoir,,,0
-de informatie,,information,de informatie is niet juist,,0
-klopt,,VRAI,dat klopt!,,0
-de vriend,vrienden,Ami,,,0
-de vriendin,vriendinnen,Ami,,,0
-het antwoord,antworden,répondre,,,0
-de brief,brieven,lettre,,,0
-de zoon,zonen,Fils,,,0
-de school,scholen,école,,,0
-de week,weken,semaine,,,0
-de vraag,vragen,question,,,0
-de maandag,maandagen,Lundi,gesloten op maandagen.,,0
-de dinsdag,dinsdagen,Mardi,,,0
-de woensdag,woensdagen,Mercredi,,,0
-de donderdag,donderdagen,Jeudi,,,0
-de vrijdag,vrijdagen,Vendredi,,,0
-de zaterdag,zaterdagen,Samedi,,,0
-de zondag,zondagen,Dimanche,,,0
-de meter,meters,mètre,,,0
+het conferentie,,la conférence,het conferentiezal,,0
+de kamer,kamers,la chambre,de conferentiekamer,,0
+de advertentie,advertenties,l'offre d'emploi/publicité,,,0
+de koffie,koffies,le café,een kopje koffie,<contenant> puis <contenu>,0
+het rechts/het links,,droite/gauche,de conferentiekamer is rechts,,0
+de leerkracht/de leraar/lerares,leerkrachten/leraren,l'enseignant,,,0
+de ingenieur,ingenieurs,l'ingénieur,,,0
+de collega,collega's,le collègue,,,0
+de vrouw,vrouwen,la femme,,,0
+de moeder,moeders,la mère,,,0
+de vader,vaders,le père,,,0
+het meisje,meisjes,la fille,,je : diminutif des het-word,0
+de jongen,jongens,le garçon,,,0
+het kind,kinderen,l'enfant,,,0
+goedemorgen,,bonjour,,,0
+goedemiddag,,bonne après-midi,,,0
+goedenamiddag,,bonne après-midi,,,0
+goedenavond,,bonsoir,,,0
+de informatie,,l'information,de informatie is niet juist,,0
+klopt,,vrai,dat klopt!,,0
+de vriend/de vriendin,vrienden/vriendinnen,l'ami/l'amie,,,0
+het antwoord,antworden,la réponse,,,0
+de brief,brieven,la lettre,,,0
+de zoon,zonen,le fils,,,0
+de school,scholen,l'école,,,0
+de week,weken,la semaine,,,0
+de vraag,vragen,la question,,,0
+de maandag,maandagen,le lundi,gesloten op maandagen.,,0
+de dinsdag,dinsdagen,le mardi,,,0
+de woensdag,woensdagen,le mercredi,,,0
+de donderdag,donderdagen,le jeudi,,,0
+de vrijdag,vrijdagen,le vendredi,,,0
+de zaterdag,zaterdagen,le samedi,,,0
+de zondag,zondagen,le dimanche,,,0
+de meter,meters,le mètre,,,0
 de baard,baarden,la barbe,een lange witte baard,,0
 de staf,,la cane de Saint-Nicolas/personnel,,,0
 de mantel/jas,jassen,le manteau,een lange rode mantel,,0
 de handschoen,handschoenen,le gant,,,0
-het paard,paarden,cheval,het paarde verjaardag van de sint.|een paard van de Sinterklaas.,,0
-het cadeau/geschenk,geschenken,cadeau,de cadeautjes,,0
+het paard,paarden,le cheval,het paarde verjaardag van de sint.|een paard van de Sinterklaas.,,0
+het cadeau/geschenk,geschenken,le cadeau,de cadeautjes,,0
 aanwezig/afwezig,,présent/absent,,,0
-de context,contexten,contexte,met de huidige context (avec le contexte actuel),,0
+de context,contexten,le contexte,met de huidige context (avec le contexte actuel),,0
 vroeg/laat,,tôt/tard,heel vroeg (très tôt),,0
 vrijwillig/onwillekeurig,,volontaire/involontaire,,,0
-af en toe/soms,,Parfois,,,0
-de neef,neven,neveu,,,0
+af en toe/soms,,parfois,,,0
+de neef,neven,le neveu,,,0
 (on)beschikbaar,,(in)disponible,,,0
-de middagpauze,middagpauzes,pause,heeft een middagpauze,,0
+de middagpauze,middagpauzes,la pause,heeft een middagpauze,,0
 doorlopend,,continu,is doorlopend open,,0
-de sluitingsdag,sluitingsdagen,jour de fermeture,,,0
-het weekend,weekenden,weekend,open/gesloten in het weekend,,0
-de schoen,schoenen,chaussure,,,0
-de nieuwsjaarsdag,nieuwsjaarsdagen,Jour de l’An,open op nieuwsjaarsdag,,0
-de schoorsteen,schoorstenen,cheminée,hij klimt door de schoorsteen,,0
-brave,,Courageux,alle brave kinderen,,0
+de sluitingsdag,sluitingsdagen,le jour de fermeture,,,0
+het weekend,weekenden,le weekend,open/gesloten in het weekend,,0
+de schoen,schoenen,la chaussure,,,0
+de nieuwsjaarsdag,nieuwsjaarsdagen,le jour de l’an,open op nieuwsjaarsdag,,0
+de schoorsteen,schoorstenen,la cheminée,hij klimt door de schoorsteen,,0
+brave,,courageux,alle brave kinderen,,0
 Sinterklaas,,Saint-Nicolas,Dank u Sinterklaas,,0
 de mijter,,le chapeau de Saint-Nicolas,,,0
 de traditie,tradities,la tradition,,,0
@@ -258,12 +258,12 @@ de wortel,wortels,la racine,wortels voor het paard,,0
 de suiker,suikers,le sucre,een klein suiker,,0
 het bier,bieren,la bière,een flesje bier,,0
 het verlanglijstje,verlanglijstjes,la liste de souhaits,dit is mijn verlanglijstje !,,0
-de muts,mutsen,bonnet,een muts voor de winter,,0
+de muts,mutsen,le bonnet,een muts voor de winter,,0
 veel,,beaucoup,veel liefs ! (avec amour !),,0
-de liefte,,chéri,,,0
-de liefde,,amour,,,0
-de pen,pennen,stylo,,redoubler la consonne si on veux que le son reste court (pen => pennen),0
-de peer,peren,poire,,redoubler la voyelle si on veut que le son reste long (peren => peer),0
+de liefte,,le chéri,,,0
+de liefde,,l'amour,,,0
+de pen,pennen,le stylo,,redoubler la consonne si on veux que le son reste court (pen => pennen),0
+de peer,peren,la poire,,redoubler la voyelle si on veut que le son reste long (peren => peer),0
 7 uur 's morgens,,sept heures du matin,om 7 uur 's morgens,,0
 7 uur 's avonds,,sept heures du soir,om 7 uur 's avonds,,0
 7 uur 's nachts,,sept heures de la nuit,om 7 uur 's nachts,,0
@@ -274,24 +274,24 @@ vijf over half zes 's middags,,17h35,,,0
 van tot,,de jusqu’à,,,0
 zoals,,tels que/comme,,,0
 de ruimte,,l'espace,,,0
-de baas/de directeur,,le patron,Elon Musk is de baas van Tesla.,,0
-de auto,,auto,dit bedrijf maakt elektrische auto's.,,0
+de baas/de directeur,,le patron,Elon Musk is de baas van Tesla,,0
+de auto,,auto,dit bedrijf maakt elektrische auto's,,0
 de toekomst,,avenir,,,0
-het bedrijf/de firma/de onderneming,,entreprise,Tesla is een bedrijf. Elon Musk heeft een tweede activiteit.,,0
-de reis,,voyage,hij organissert reizen naar de ruimte voor rijke toeristen.,,0
-de visie,,vision,,,0
-de atleet,,l'athlète,Ze is een Amerikaanse atleet.,,0
-de gymnastiek,,la gymnastique,ze doet aan gymnastiek.,,0
-de turnster,,le gymnaste,ze is een turnster.,,0
-speel,spelen,jeux,Ze was de favoriet van de Olympische Spelen.,,0
-de stress/de druk,,le stress/la pression,Ze had veel stress. Ze was onder druk.,,0
-de prestatie,,la performance,Ze is de atleet van het jaar door haar prestatie over het hele jaar.,,0
+het bedrijf/de firma/de onderneming,,entreprise,Tesla is een bedrijf. Elon Musk heeft een tweede activiteit,,0
+de reis,,voyage,hij organissert reizen naar de ruimte voor rijke toeristen,,0
+de visie,,la vision,,,0
+de atleet,,l'athlète,ze is een Amerikaanse atleet,,0
+de gymnastiek,,la gymnastique,ze doet aan gymnastiek,,0
+de turnster,,le gymnaste,ze is een turnster,,0
+het spel,spelen,le jeux,ze was de favoriet van de Olympische Spelen,,0
+de stress/de druk,,le stress/la pression,ze had veel stress. Ze was onder druk,,0
+de prestatie,,la performance,ze is de atleet van het jaar door haar prestatie over het hele jaar,,0
 de wetenschapper,wetenshappers/dokters,le scientifique,,,0
 de dokter,,le docteur,,,0
-de wetenschap,wetenschappen,science,,,0
-de wetenschapper,wetenschappers,scientifique,,,0
-de weten,,le savoir,Ik weet het niet.,,0
-het vaccin,vaccins,le vaccin,ze werken over het vaccin tegen covid19.,,0
+de wetenschap,wetenschappen,la science,,,0
+de wetenschapper,wetenschappers,le scientifique,,,0
+de weten,,le savoir,ik weet het niet,,0
+het vaccin,vaccins,le vaccin,ze werken over het vaccin tegen covid19,,0
 de ontwikkeling,ontwikkelingen,le développement,,,0
 nulste,,null,,,0
 nulde,,null,,,0
@@ -324,21 +324,21 @@ af en toe,,de temps en temps,,,0
 meestal,,généralement,,,0
 soms,,parfois,,,0
 de volwassen,,l’adulte,,,0
-Twee keer per maand,,deux fois par an,,,0
-met (naam),,Au téléphone,,u spreekt met,0
+twee keer per maand,,deux fois par an,,,0
+met (naam),,au téléphone avec,,u spreekt met,0
 (veel) beterschap,,prompt rétablissement,,,0
-de vraag,,question,,/!\ Een kwestie van tijd (une question de temps).,0
-de aanvraag,,demande ,,,0
+de vraag,,question,,/!\ Een kwestie van tijd (une question de temps),0
+de aanvraag,,la demande ,,,0
 meestal,,généraliement,,,0
 want,,car,,pas d’inversion/ni de rejet,0
 omdat,,parce que,Hij wil zich voor een cursus Frans inschrijven omdat hij zich voor een cursus Frans wil inschrijven./rejet du groupe verbal,,0
-de ziekte,,maladie,Ze is ziek omdat ze ziek is.,,0
+de ziekte,,la maladie,Ze is ziek omdat ze ziek is.,,0
 het spreekuur/de raadpleging,,la consultation,,,0
-de raad,,conseil,de raad van bestuur (conseil d'administration),,0
-de raadgever,,conseiller,,,0
-de schat,,trésor,,denk aan 'woordenschat' (trésor des mots).,0
-de afspraak,,rdv,,,0
-te voet,,à pied,,Moyen de transport : met + art + nom.,0
+de raad,,le conseil,de raad van bestuur (conseil d'administration),,0
+de raadgever,,le conseiller,,,0
+de schat,,le trésor,,denk aan 'woordenschat' (trésor des mots).,0
+de afspraak,,le rdv,,,0
+te voet,,à pied,,moyen de transport : met + art + nom,0
 overmorgen,,après-demain,,,0
 over,,dans + délais,overmorgen (après-demain),,0
 op,,à,op school,,0
@@ -346,40 +346,40 @@ terug,,retour/à nouveau,,,0
 na,,après,,,0
 voor,,avant,,,0
 met,,avec,ik ben getrouwd met X (marié à),,0
-van tot,,de à,van 1 uur tot 4 uur/van Brussel tot Luik.,<départ déplacement>,0
-naar,,à,,<lieux déplacement>,0
+van tot,,de à,van 1 uur tot 4 uur/van Brussel tot Luik,<départ + déplacement>,0
+naar,,à,,<lieux + déplacement>,0
 in,,à,,devant mois/moments de la journée/saisons/lieux,0
 om,,à,,devant heures,0
-Alle/al de/aller/allen/allemaal,,tous,,,0
-de herdenking,,commémoration,,,0
-de slag,,bataille,,,0
-de Congreskolom,,la colonne du congrès,,,0
-de zuil,,colonne (p.ex. d’un temple),,,0
+alle/al de/aller/allen/allemaal,,tous,,,0
+de herdenking,,la commémoration,,,0
+de slag,,la bataille,,,0
+de congreskolom,,la colonne du congrès,,,0
+de zuil,,la colonne (p.ex. d’un temple),,,0
 Het monument,,le monument, Het monument van de onbekende soldaat,,0
 Koning Filip,,le roi Philippe,,,0
-De krans,,couronne ou gerbe de fleurs,,,0
+De krans,,la couronne ou gerbe de fleurs,,,0
 De bloemenkroon,,la couronne de fleurs (sur la tête),,,0
-de wereldoorlog,,guerre mondiale,Het is het einde van de eerste wereldoorlog (WOI),,0
-de heilig,,saint,,,0
+de wereldoorlog,,la guerre mondiale,Het is het einde van de eerste wereldoorlog (WOI),,0
+de heilig,,le saint,,,0
 Allerheiligen,,Toussaint,,,0
 de arbeid,,le travail (manuel),,,0
 de arbeider,,l'ouvrier,,,0
-onze heer (OH),,notre seigneur,,,0
+Onze heer (OH),,notre seigneur,,,0
 Onze Lieve Vrouw (OLV),,Notre Dame,,,0
 Kerstmis,,Noël,25 december,,0
-de mis,,messe,,,0
+de mis,,la messe,,,0
 de kermis,,kermesse,,,0
-kersen,,cerises,,,0
-Kerst-,,de Noël,Kerstmarkt/Kerstvakantie,,0
-De dag,dagen,le jour,,1 dag => 2 dagen (exception),0
-Feestdag,,jour férié,,,0
-Verlofdag,,jour de congé,,,0
-Weekdag,,jour de semaine,,,0
-Werkdag,,jour ouvrable,,,0
+de kers,kersen,la cerise,,,0
+kerst-,,de Noël,Kerstmarkt/Kerstvakantie,,0
+de dag,dagen,le jour,,1 dag => 2 dagen (exception),0
+de feestdag,,le jour férié,,,0
+de verlofdag,,le jour de congé,,,0
+de weekdag,,le jour de semaine,,,0
+de werkdag,,jour ouvrable,,,0
 De wereld,,le monde,,,0
 De oorlog,,la guerre,,,0
-Betrokken,,impliqué,,,0
-De kroon,,la couronne (sur la tête),,,0
+betrokken,,impliqué,Betrokken bij ontwikkelings,,0
+de kroon,,la couronne (sur la tête),,,0
 het cadeau/kado (kdo),,le cadeau,Oh een cadeau. Dat had je niet moeten doen!,,0
 de verjaardag,verjaardagen,la date d'aniverssaire,Gelukkige verjaardag! Ik heb iets voor jou!/Gefeliciteerd met je verjaardag!,,0
 eens,,une fois,Toch wel en nog eens proficiat!,,0
@@ -445,7 +445,7 @@ de spoorlijn,,la voie de chemin de fer,,,0
 het spoor,,la voie,,,0
 het beroep,,le métier,,,0
 de nationaliteit,,la nationnalité,,,0
-mooi,,beau,Mooi ! We beginnen. (Bien ! Nous commençons.),,0
+mooi,,beau,Mooi ! We beginnen (Bien ! Nous commençons),,0
 bijna,,presque,,,0
 momenteel,,momentanément,ik werk mementeel,,0
 niets,,jamais,,,0
@@ -513,47 +513,39 @@ terwijl,,alors que,,,0
 zodra,,dés que,zo snel mogelijk,,0
 dikwijls,,souvent,we zijn dikwijls samen.,,0
 in plaats van,,au lieu de,,,0
-het nichtje,,la nièce,,,0
-het neefje,,le neveu,,,0
+het nichtje,,la petite nièce,,,0
+het neefje,,le petit neveu,,,0
 de peetvader,,le parrain,,,0
 de peettante,,la marraine,,,0
-het liefst,,de préférence,Wat eet jij het liefst ? ik eet het liefst pasta.,,0
+het liefst,,de préférence,wat eet jij het liefst ? ik eet het liefst pasta,,0
 de hobby,hobby's,l'hobby,,,0
 de friet,frieten,la frite,,,0
 elkaar,,chacun,we kennen elkaar al tien jaar.,,0
-de walvis,,la baleine,de walvis is het grootste levende dier ter wereld.,,0
+de walvis,walvissen,la baleine,de walvis is het grootste levende dier ter wereld.,,0
 de spin,spinnen,l'arreigné,ken je de giftigste spin ter wereld ?,,0
 het huisdier,huisdieren,l'animal de compagnie,heb jij een huisdier ?,,0
 het konijn,konijnen,le lapin,,,0
 de hond,honden,le chien,,,0
 de slang,slangen,le serpent,,,0
 echt,,vraiment,dat begrijpt ik echt niet !,,0
-als,,comme,Sommige mensen willen een slang als huisdier !,,0
-bang,,peur,Een de meeste mensen zijn er bang van.,,0
+als,,comme,sommige mensen willen een slang als huisdier !,,0
+bang,,peur,een de meeste mensen zijn er bang van,,0
 het beestje,,l'insecte,het lieveheersbeetje is het mooiste insect.,,0
-de voelspriet,voelsprieten,l'antenne,Die voelsprieten gebruikt ze om te voelen en te ruiken.,,0
+de voelspriet,voelsprieten,l'antenne,die voelsprieten gebruikt ze om te voelen en te ruiken,,0
 zuid/noord/oost/west,,sud/nord/est/ouest,deze spin leeft in het zuiden van Amerika.,,0
 de poot,poten,la jambe,Zoals alle spinnen heeft ze acht poten.,,0
 de buik,,le ventre,de walvis is 24 keer groter dan een olifant.,,0
 de olifant,,l'éléphant,,,0
 lieve,,cher,Lieve Sint !,,0
-de beterschap,,prompt rétablissement,Veel beterschap.,,0
-de zomer/winter,,l'été/l'hiver,De zomertijd begint het laaste weekend van maart. De wintertijd begint het laatste weekend van oktober.,,0
+de beterschap,,le prompt rétablissement,Veel beterschap.,,0
+de zomer/de winter/de herfst/de lente,,l'été/l'hiver/l'automne/le printemps,De zomertijd begint het laaste weekend van maart. De wintertijd begint het laatste weekend van oktober.,,0
 het uur,,l'heure,,,0
 de tijd,,le temps,,,0
 de heilig,,le saint,,,0
 Allerheiligen,,Toussaint,Op 1 november is Allerheiligen.,,0
 de staat,,l'état,,,0
 Verenigd koninkrijk,,Royaume Uni,,,0
-tussen,,entre,Tussen 8 uur en halfnegen,,0
+tussen,,entre,tussen 8 uur en halfnegen,,0
 meestal,,généralement,,,0
-opnieuw,,à nouveau,Hij woont al 10 jaar in België/al 3 jaar opnieuw in Bergen.,,0
+opnieuw,,à nouveau,hij woont al 10 jaar in België/al 3 jaar opnieuw in Bergen,,0
 nu,,maintenant,,,0
-de doctor,,le médecin,ik ben geen doctor,,1
-de wetenschap,wetenschappen,la science,een computer wetenschap,,1
-de wetenschapper,wetenschappers,le scientifique,,,1
-de man,mannen,le mari,ze eet haar mannetje altijd op.,man/nen (1V dans une syllabe fermée : le son reste court au pluriel),1
-de ambtenaar,ambtenaren,le fonctionnaire,,,1
-het landbouw,landbouwen,l'agriculture,,,1
-de kennis,kenissen,la connaissance,,,1
-de architect,architecten,l'architecte,ik ben geen architect,,1

@@ -2,7 +2,10 @@
 
 require 'util.php';
 define('ROWS', 10);
+// count_commas_per_line('docs/woorden2.csv');
+// die();
 $data = csv_to_array_03('docs/woorden2.csv');
+
 ?>
 
 <form class="oefening_form" name="oefening_form" action="" method="post">
