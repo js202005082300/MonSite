@@ -44,20 +44,6 @@ class Curl
 </head>
 <body class="container">
     <header>
-        <?php
-        if(isset($_POST['woord_woord']) && !empty($_POST['woord_woord']))
-        {
-            $url1="https://www.mijnwoordenboek.nl/ww.php?woord=".$_POST['woord_woord'];
-            $url2="https://www.welklidwoord.be/".$_POST['woord_woord'];
-            $obj1 = new Curl($url1);
-            $str1 = $obj1->getPage();
-            $obj2 = new Curl($url2);
-            $str2 = $obj2->getPage();
-
-            lidwoord($str2);
-            werkwoord($str1);
-        }
-        ?>
     </header>
 
     <main>
@@ -68,31 +54,49 @@ class Curl
                 <input type="submit" name="valid_woord" class="valid_woord" value="valider">
             </fieldset>
         </form>
+        <?php
+            if(isset($_POST['woord_woord']) && !empty($_POST['woord_woord']))
+            {
+                $url1="https://www.mijnwoordenboek.nl/ww.php?woord=".$_POST['woord_woord'];
+                $url2="https://www.welklidwoord.be/".$_POST['woord_woord'];
+                $url3="https://www.reverso.net/traduction-texte#sl=fra&tl=dut&text=".$_POST['woord_woord'];
+                $url4="https://translate.google.be/?hl=fr&sl=nl&tl=fr&op=translate";
+                $url5="https://translate.google.be/?hl=fr&sl=fr&tl=nl&op=translate";
+                $obj1 = new Curl($url1);
+                $str1 = $obj1->getPage();
+                $obj2 = new Curl($url2);
+                $str2 = $obj2->getPage();
+
+                lidwoord($str2);
+                werkwoord($str1);
+
+            echo '<div><nav>';
+                echo '<li><a href='.$url1.' target="_blank">mijnwoordenboek.nl</a></li>';
+                echo '<li><a href='.$url2.' target="_blank">welklidwoord.be</a></li>';
+                echo '<li><a href='.$url3.' target="_blank">reverso.net</a></li>';
+                echo '<li><a href='.$url4.' target="_blank">FR>NL (translate.google.be)</a></li>';
+                echo '<li><a href='.$url5.' target="_blank">NL>FR (translate.google.be)</a></li>';
+            echo '</div></nav>';
+            }
+        ?>
+
     </main>
 
-    <aside>
 
+
+    <aside>
     <?php require_once "fileManager.php"; ?>
-        <!-- <iframe src="translate.google.be/?hl=fr&sl=fr&tl=nl&text=les%20mots%0A&op=translate"></iframe> -->
+    </aside>
+
+    <footer>
+
+    </footer>
+
     <script>
         $(document).ready(
 
         );
     </script>
-    
-    </aside>
-
-    <footer>
-        <div>
-            <nav>
-                <li><a href="https://www.mijnwoordenboek.nl/">https://www.mijnwoordenboek.nl/</a></li>
-                <li><a href="https://www.welklidwoord.be/">https://www.welklidwoord.be/</a></li>
-                <li><a href="https://translate.google.be/?hl=fr&sl=nl&tl=fr&op=translate" target="_blank">NL>FR (translate.google.be)</a></li>
-                <li><a href="https://translate.google.be/?hl=fr&sl=fr&tl=nl&op=translate" target="_blank">FR>NL (translate.google.be)</a></li>
-                <li><a href="https://www.reverso.net/traduction-texte#sl=fra&tl=dut&text=un%2520espace" target="_blank">FR>NL (reverso.com)</a></li>
-            </nav>
-        </div>
-    </footer>
 
 </body>
 </html>

@@ -9,7 +9,7 @@
     grid-template-columns:1fr 1fr;
     grid-template-areas:"header aside"
                         "main aside"
-                        "footer aside";
+                        "footer footer";
 }
 header{grid-area:header;}
 main{grid-area:main;}
