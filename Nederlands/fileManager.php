@@ -4,7 +4,7 @@ require 'util.php';
 define('ROWS', 10);
 // count_commas_per_line('docs/woorden2.csv');
 // die();
-$data = csv_to_array_03('docs/woorden2.csv');
+$data = csv_to_array('docs/woorden2.csv');
 
 ?>
 
@@ -39,7 +39,6 @@ echo '<style>.green{text-decoration-color:green;}.red{text-decoration-color:red;
                     echo '<input type="text" class="'.$i.' red" name='.$i.' placeholder="'.$_POST[$i].'" size="25">';
                     echo '<em>Niet juist : </em>'.$data[$i]['woord'];
                 }
-                
             }
             else
             {
@@ -61,13 +60,15 @@ echo '<style>.green{text-decoration-color:green;}.red{text-decoration-color:red;
     if(isset($_POST['delete_oefening']) && !empty($_POST['delete_oefening']))
     {
         $_POST = array();
-        header(); 
+        header('Location : main.php');
     }
 
     if(isset($_POST['reset_oefening']) && !empty($_POST['reset_oefening']))
     {
-        $data = csv_to_array_03('docs/woorden.csv');
+        $data = csv_to_array('docs/woorden.csv');
         array_to_csv($data,'docs/woorden2.csv');
+        $_POST = array();
+        // header('Location : main.php');
     }
 
     $_POST = array();

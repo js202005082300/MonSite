@@ -25,7 +25,7 @@ de dienst,diensten,service,dezelfde dienst (le même service)|op dienst (en serv
 dezelfde/hetzelfde,,le/la même(s),,,0
 Italië,,Italie,ze komt uit Italië,,0
 Rusland,,Russie,,,0
-De verenigde Staten,,Les États-Unis,,,0
+de Verenigde Staten,,Les États-Unis,,,0
 Portugal,,Portugal,,,0
 België,,Belgique,België is een klein land.,,0
 Frankrijk,,France,,,0
@@ -33,29 +33,28 @@ Luxemburg,,Luxembourg,,,0
 Duitsland,,Allemagne,,,0
 Nederland,,Pays-Bas,,,0
 Japan,,Japon,,,0
-de taal,talen,langue,,ta/len (1 voyelle dans une syllabe ouverte : le son reste long)|taal (2V dans une syllabe fermée),0
+de taal,talen,la langue,,ta/len (1 voyelle dans une syllabe ouverte : le son reste long)|taal (2V dans une syllabe fermée),0
 meertalig,,multilingue,,,0
 Franstalig,,francophone,Ik ben Franstallig,,0
 Nederlandstalig,,néerlandophone,,,0
 Duitstalig,,germanophone,,,0
-Fins,,finnois,ik spreek geen Fins (je ne parle pas finnois),,0
-Pools,,polonais,,,0
-Zweeds,,suédois,,,0
+fins,,finnois,ik spreek geen Fins (je ne parle pas finnois),,0
+pools,,polonais,,,0
+zweeds,,suédois,,,0
 duits,,allemand,,,0
 italiaans,,italien,je bent Italiaans|ik spreek italiaans,,0
 nederlands,,néerlandais,ik spreek nederlands|ze leert nederlands|de nederlands princess (la princesse hollandaise), "s" à l'adjectif ou à la langue,0
 Nederland,,Pays-Bas,,,0
 belgisch,,belge,,,0
-russisch,,Russe,hij spreekt russisch en nu ook nederlands,,0
+russisch,,russe,hij spreekt russisch en nu ook nederlands,,0
 spaans,,espagnol,ik spreek spaans,,0
 chinees,,chinois,ik spreek chinees,,0
 engels,,anglais,ik spreek engels,,0
 frans,,français,en wat Frans (et un peu français)|ik ben alleen frans,,0
 japans,,japonais,,,0
-moedertaal,moedertalen,langue maternelle,mijn moedertaal is frans,,0
+de moedertaal,moedertalen,langue maternelle,mijn moedertaal is frans,,0
 Vlaanderen,,Flandre,,,0
 Wallonië,,Wallonie,,,0
-het gewest,gewesten,région,Het Waals Gewest/Het Vlaamse Gewest,sens administratif plutôt que région,0
 Vlaams Brabant,,Brabant Flamand,,,0
 waals,walen,Wallon,,,0
 vlaams,vlamingen,flamand,,,0
@@ -66,7 +65,7 @@ het land,landen,le pays,uit welk land,pas de "e" à welk,0
 de stad,steden,la ville,,,0
 de hoofdstad/het hoofdstedelijk,hoofsteden,la capital,Het Brussels Hoofdstedelijk gewest (region bruxelles capitale)|het hoofdstedelijk gewest,(adjectif pour la capital),0
 het dorp,dorpen,le village,,,0
-de streek/de regio,streken/regio's,la région,uit welke streek kom je ?,sens administratif pour 'regio' mais pas 'streek',0
+het gewest/de streek/de regio,gewesten/streken/regio's,la région,Het Waals Gewest/Het Vlaamse Gewest/uit welke streek kom je ?,sens administratif pour 'regio' et 'geweest' mais pas 'streek',0
 de plaats,plaatsen,le lieu,,,0
 de woonplaats,woonplaatsen,la résidence,,,0
 het transport,transporten,le transport,,,0

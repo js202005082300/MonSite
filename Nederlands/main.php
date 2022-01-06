@@ -75,12 +75,9 @@ class Curl
     <?php require_once "fileManager.php"; ?>
         <!-- <iframe src="translate.google.be/?hl=fr&sl=fr&tl=nl&text=les%20mots%0A&op=translate"></iframe> -->
     <script>
-$(document).ready(
-function changer2URL() {
-   window.location.href="woorden.php";
-   window.open("translate.google.be");
-}
-);
+        $(document).ready(
+
+        );
     </script>
     
     </aside>
@@ -92,6 +89,7 @@ function changer2URL() {
                 <li><a href="https://www.welklidwoord.be/">https://www.welklidwoord.be/</a></li>
                 <li><a href="https://translate.google.be/?hl=fr&sl=nl&tl=fr&op=translate" target="_blank">NL>FR (translate.google.be)</a></li>
                 <li><a href="https://translate.google.be/?hl=fr&sl=fr&tl=nl&op=translate" target="_blank">FR>NL (translate.google.be)</a></li>
+                <li><a href="https://www.reverso.net/traduction-texte#sl=fra&tl=dut&text=un%2520espace" target="_blank">FR>NL (reverso.com)</a></li>
             </nav>
         </div>
     </footer>

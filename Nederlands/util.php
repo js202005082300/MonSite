@@ -11,12 +11,11 @@ function sort_array_by_test(array $arr) : array
             array_push($a2, $el);
     }
 
-    $a1[array_key_first($a1)]['test'] .= "\n";
+    if(substr($a1[array_key_last($a1)]['test'], -1) != "\n")
+        $a1[array_key_last($a1)]['test'] .= "\n";
 
     foreach($a2 as $el)
         array_push($a1, $el);
-
-    substr($a1[array_key_last($a1)]['test'], -1);
 
     return $a1;
 }
@@ -46,8 +45,10 @@ function array_to_csv(array $arr, string $path) : void
     $str = substr($str, 0, -1)."\n";
     fwrite($myFile, $str);
 
+    $str = "";
     foreach($arr as $fields){
         $line = "";
+
         foreach($fields as $el)
         {
             if(substr($el, -1) != "\n" && end($fields) != $el)
@@ -55,10 +56,11 @@ function array_to_csv(array $arr, string $path) : void
             else
                 $line .= $el;
         }
-
-        fwrite($myFile, $line);
+        $str .= $line;
     }
-      
+
+    fwrite($myFile, rtrim($str, "\n"));
+
     if(!fclose($myFile))
         exit("Fermeture du fichier echouee");
 }
@@ -93,7 +95,7 @@ function csv_to_array_02(string $path) : array
         return $data;
 }
 
-function csv_to_array_03(string $path) : array
+function csv_to_array(string $path) : array
 {
     $myFile = fopen($path, "r");
     if(!$myFile)
@@ -172,10 +174,10 @@ function test_benchmark() : void
     echo "csv_to_array_02 : ".$temps_02." sec<br>";
     
     $debut = microtime(true); 
-    $data = csv_to_array_03("docs/woorden.csv");
+    $data = csv_to_array("docs/woorden.csv");
     $fin = microtime(true); 
     $temps_03 = ($fin - $debut);
-    echo "csv_to_array_03 : ".$temps_03." sec<br>";
+    echo "csv_to_array : ".$temps_03." sec<br>";
     
     $debut = microtime(true); 
     $data = csv_to_object("docs/woorden.csv");
