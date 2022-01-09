@@ -31,6 +31,23 @@ function count_test_to_1(array $arr) : int
     return $count;
 }
 
+function csv_to_array(string $path) : array
+{
+    $myFile = fopen($path, "r");
+    if(!$myFile)
+        exit("Ouverture du fichier impossible");//die()
+    
+    $data = [];
+    $head = explode(",", trim(fgets($myFile), "\r\n"));
+    while(!feof($myFile))
+        array_push($data, array_combine($head, explode(',', fgets($myFile))));
+
+    if(!fclose($myFile))
+        exit("Fermeture du fichier echouee");
+    else
+        return $data;
+}
+
 function array_to_csv(array $arr, string $path) : void
 {    
     $myFile = fopen($path, 'w');
@@ -89,23 +106,6 @@ function csv_to_array_02(string $path) : array
     while (($line = fgetcsv($myFile, 0, ",")) !== FALSE)
         array_push($data, array_combine($head, $line));
     
-    if(!fclose($myFile))
-        exit("Fermeture du fichier echouee");
-    else
-        return $data;
-}
-
-function csv_to_array(string $path) : array
-{
-    $myFile = fopen($path, "r");
-    if(!$myFile)
-        exit("Ouverture du fichier impossible");//die()
-    
-    $data = [];
-    $head = explode(",", trim(fgets($myFile), "\r\n"));
-    while(!feof($myFile))
-        array_push($data, array_combine($head, explode(',', fgets($myFile))));
-
     if(!fclose($myFile))
         exit("Fermeture du fichier echouee");
     else

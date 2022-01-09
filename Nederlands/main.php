@@ -44,6 +44,7 @@ class Curl
 </head>
 <body class="container">
     <header>
+        <?php //require_once "dbManager.php"; ?>
     </header>
 
     <main>
@@ -79,13 +80,10 @@ class Curl
             echo '</div></nav>';
             }
         ?>
-
     </main>
 
-
-
     <aside>
-    <?php require_once "fileManager.php"; ?>
+        <?php require_once "fileManager.php"; ?>
     </aside>
 
     <footer>

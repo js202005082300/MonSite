@@ -1,11 +1,27 @@
 <?php
+require '../util.php';
+init_php_session();
+if(is_logged()):
 
-require 'util.php';
-define('ROWS', 10);
-// count_commas_per_line('docs/woorden2.csv');
+define("ROWS", 12);
+define("FILE_SOURCE", "docs/woorden.csv");
+define("MY_FILE", "docs/woorden_".htmlspecialchars($_SESSION['username']));
+?>
+
+<?php
+require 'util_fileManager.php';
+
+// count_commas_per_line($FileSource);
 // die();
-$data = csv_to_array('docs/woorden2.csv');
 
+if(!file_exists(MY_FILE) || (isset($_POST['reset_oefening']) && !empty($_POST['reset_oefening'])))
+{
+    $data = csv_to_array(FILE_SOURCE);
+    array_to_csv($data,MY_FILE);
+    $_POST = array();
+}
+
+$data = csv_to_array(MY_FILE);
 ?>
 
 <form class="oefening_form" name="oefening_form" action="" method="post">
@@ -14,7 +30,7 @@ $data = csv_to_array('docs/woorden2.csv');
 
 <?php
 echo '<div>';
-echo '<style>.green{text-decoration-color:green;}.red{text-decoration-color:red;}</style>';
+// echo '<style>.green{text-decoration-color:green;}.red{text-decoration-color:red;}</style>';
 
     for($i=0; $i < ROWS; $i++)
     {
@@ -30,7 +46,7 @@ echo '<style>.green{text-decoration-color:green;}.red{text-decoration-color:red;
                     echo '<em>Juist, prima !</em></br>
                         '.$data[$i]['woord'].' ('.$data[$i]['woorden'].') = '.$data[$i]['vertaling'];
                     if($data[$i]['bijvoorbeld'])
-                        echo '<br>bvb : '.$data[$i]['bijvoorbeld'];
+                        echo '<br>'.$data[$i]['bijvoorbeld'];
                     if($data[$i]['toelichting'])
                         echo '<br>'.$data[$i]['toelichting'];
                 }
@@ -53,32 +69,26 @@ echo '<style>.green{text-decoration-color:green;}.red{text-decoration-color:red;
     if(isset($_POST['valid_oefening']) && !empty($_POST['valid_oefening']))
     {
         $data = sort_array_by_test($data);
-        array_to_csv($data,'docs/woorden2.csv');
-        // header('fileManager.php'); 
+        array_to_csv($data, MY_FILE);
     }
-
+    
     if(isset($_POST['delete_oefening']) && !empty($_POST['delete_oefening']))
     {
         $_POST = array();
         header('Location : main.php');
     }
 
-    if(isset($_POST['reset_oefening']) && !empty($_POST['reset_oefening']))
-    {
-        $data = csv_to_array('docs/woorden.csv');
-        array_to_csv($data,'docs/woorden2.csv');
-        $_POST = array();
-        // header('Location : main.php');
-    }
-
-    $_POST = array();
-
 echo '</div></br></br>';
 ?>
-
-    <input type="submit" name="valid_oefening" class="valid_oefening" value="valider">
-    <input type="submit" name="next_oefening" class="next_oefening" value="suivant">
+    <?php if(isset($_POST['valid_oefening']) && !empty($_POST['valid_oefening'])): ?>
+        <input type="submit" name="next_oefening" class="next_oefening" value="suivant">
+        <?php $_POST['valid_oefening'] = NULL; ?>
+    <?php else: ?>
+        <input type="submit" name="valid_oefening" class="valid_oefening" value="valider">
+        <input type="reset" value="effacer">
+    <?php endif; ?>
     <input type="submit" name="reset_oefening" class="reset_oefening" value="réinitialiser">
-    <input type="reset" value="effacer">
 </fieldset>
 </form>
+
+<?php endif; ?>
