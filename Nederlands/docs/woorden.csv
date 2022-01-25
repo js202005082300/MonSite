@@ -36,21 +36,21 @@ meertalig,,multilingue,,,0
 Franstalig,,francophone,Ik ben Franstallig,,0
 Nederlandstalig,,néerlandophone,,,0
 Duitstalig,,germanophone,,,0
-fins,,finnois,ik spreek geen Fins (je ne parle pas finnois),,0
-pools,,polonais,,,0
-zweeds,,suédois,,,0
-duits,,allemand,,,0
-italiaans,,italien,je bent Italiaans|ik spreek italiaans,,0
-nederlands,,néerlandais,ik spreek nederlands|ze leert nederlands|de nederlands princess (la princesse hollandaise), "s" à l'adjectif ou à la langue,0
+Fins,,finnois,ik spreek geen Fins (je ne parle pas finnois),,0
+Pools,,polonais,,,0
+Zweeds,,suédois,,,0
+Duits,,allemand,,,0
+Italiaans,,italien,je bent Italiaans|ik spreek italiaans,,0
+Nederlands,,néerlandais,ik spreek nederlands|ze leert nederlands|de nederlands princess (la princesse hollandaise), "s" à l'adjectif ou à la langue,0
 Nederland,,Pays-Bas,,,0
-belgisch,,belge,,,0
-russisch,,russe,hij spreekt russisch en nu ook nederlands,,0
-spaans,,espagnol,ik spreek spaans,,0
-chinees,,chinois,ik spreek chinees,,0
-engels,,anglais,ik spreek engels,,0
-frans,,français,en wat Frans (et un peu français)|ik ben alleen frans,,0
-japans,,japonais,,,0
-de moedertaal,moedertalen,langue maternelle,mijn moedertaal is frans,,0
+Belgisch,,belge,,,0
+Russisch,,russe,hij spreekt russisch en nu ook nederlands,,0
+Spaans,,espagnol,ik spreek spaans,,0
+Chinees,,chinois,ik spreek chinees,,0
+Engels,,anglais,ik spreek engels,,0
+Frans,,français,en wat Frans (et un peu français)|ik ben alleen frans,,0
+Japans,,japonais,,,0
+de moedertaal,moedertalen,la langue maternelle,mijn moedertaal is frans,,0
 Vlaanderen,,Flandre,,,0
 Wallonië,,Wallonie,,,0
 Vlaams Brabant,,Brabant Flamand,,,0
@@ -68,7 +68,7 @@ de woonplaats,woonplaatsen,la résidence,,,0
 het transport,transporten,le transport,,,0
 de provincie,provincies,la province,in de provincie Luik,,0
 mannelijk,,masculin,m,m (mannelijk dans le dico),0
-vrouwlijk,,féminin,v,v (vrouwlijk dans le dico),0
+vrouwelijk,,féminin,v,v (vrouwlijk dans le dico),0
 neutraal,,neutre,o,o (neutre dans le dico),0
 Hoei,,Huy,ik ga van Hoei naar Namen,,0
 Luik,,Liège,de stad Luik ligt in de provincie Luik,,0
@@ -85,7 +85,7 @@ ik,,je,ik ben,k suivi de b sonne g,0
 negen,,neuf,het is negen uur,,0
 goedemiddag,,bon midi,,,0
 goedenamiddag,,bonne après-midi,,,0
-goedemorgen/hallo,,bonjour,goedemorgen allemaal (bonjour à tous),,0
+goedemorgen,,bonjour,goedemorgen allemaal (bonjour à tous),,0
 het papier,papieren,la documentation,,,0
 het formulier,formulieren,le formulaire,,,0
 de geboorte,geboorten,la naissance,hij woont sinds zijn/haar geboorte in Marchin,,0
@@ -113,19 +113,19 @@ het cijfer,cijfers,le chiffre,,,0
 het getal,getallen,le nombre,,,0
 gemiddeld,,(en) moyenne,,,0
 minstens,,au moins,,,0
-het meest > het minst,,le plus > le moindre,,,0
-het hoogst > het laagst,,le plus élevé > le plus bas,,,0
+het meest/het minst,,le plus/le moindre,,,0
+het hoogst/het laagst,,le plus élevé/le plus bas,,,0
 de baas/de leider/de directeur,bazen,le patron,Elon Musk is de baas van Tesla,,0
 de werknemer,werknemers,l'employé,,,0
 het loon/het salaris,lonen/salarissen,le salaire,,,0
 de aftrek,aftrekken,la déduction,,,0
 de euro,euro,l'euro,de bureaustoel kost vierenzestig euro,pas de s,0
 vijftig cent/één half euro,,50 cent,,,0
-honder dertien,,cent treize,,on ne dit plus le (en) à partir de 13,0
+honderd dertien,,cent treize,,on ne dit plus le (en) à partir de 13,0
 duizend dertien,,mille treize,,on ne dit plus le (en) à partir de 13,0
 kwart over tien,,10h15,,,0
 kwart voor tien,,09h45,,,0
-twintig voor twalf,,11h40 (12 heure moins 20),het is twintig voor twalf,,0
+twintig voor twaalf,,11h40 (12 heure moins 20),het is twintig voor twaalf,,0
 elf uur veertig,,11h40 (11 heure 40),het is elf uur veertig,,0
 veertig over elf,,11h40 (11 heure plus 40    ),het is veertig over elf,,0
 alleen,,seul/seulement,alleen Nedelands,,0
@@ -138,8 +138,7 @@ het kantoor,kantoren,le bureau,,,0
 de cursus,cursussen,le cours,,,0
 de opleiding,opleidingen,la formation,,,0
 het centrum,centrums,le centre,het stad centrum|het opleiding centrum,,0
-in,,dans/à,,à + lieu,0
-naar,,à,,à + lieu + déplacement,0
+in/naar,,dans/à (+lieux +déplacement),,+ lieu + déplacement,0
 met,,avec,,avec + article + moyen de déplacement),0
 Brussel,,Bruxelles,in Brussel,pas de s,0
 dat klopt,,c’est juste/c'est exacte,,,0
@@ -187,7 +186,7 @@ het conferentie,,la conférence,het conferentiezal,,0
 de kamer,kamers,la chambre,de conferentiekamer,,0
 de advertentie,advertenties,l'offre d'emploi/publicité,,,0
 de koffie,koffies,le café,een kopje koffie,<contenant> puis <contenu>,0
-het rechts/het links,,droite/gauche,de conferentiekamer is rechts,,0
+het rechts/het links,,la droite/la gauche,de conferentiekamer is rechts,,0
 de leerkracht/de leraar/lerares,leerkrachten/leraren,l'enseignant,,,0
 de ingenieur,ingenieurs,l'ingénieur,,,0
 de collega,collega's,le collègue,,,0
@@ -198,7 +197,7 @@ het meisje,meisjes,la petite fille,,je : diminutif des het-word,0
 de informatie,,l'information,de informatie is niet juist,,0
 klopt,,vrai,dat klopt!,,0
 de vriend/de vriendin,vrienden/vriendinnen,l'ami/l'amie,,,0
-het antwoord,antworden,la réponse,,,0
+het antwoord,antwoorden,la réponse,,,0
 de brief,brieven,la lettre (courrier),,,0
 de zoon,zonen,le fils,,,0
 de school,scholen,l'école,,,0
@@ -216,11 +215,10 @@ de staf,,la cane de Saint-Nicolas/personnel,,,0
 de jas/de mantel,jassen,le manteau,een lange rode mantel,,0
 de handschoen,handschoenen,le gant,,,0
 het paard,paarden,le cheval,het paarde verjaardag van de sint.|een paard van de Sinterklaas.,,0
-het cadeau/het geschenk,geschenken,le cadeau,de cadeautjes,,0
 aanwezig/afwezig,,présent/absent,,,0
 de context,contexten,le contexte,met de huidige context (avec le contexte actuel),,0
 vroeg/laat,,tôt/tard,heel vroeg (très tôt),,0
-vrijwillig/onwillekeurig,,volontaire/involontaire,,,0
+(on)vrijwillig,,(non)volontaire,,,0
 soms/af en toe,,parfois,,,0
 de neef,neven,le neveu,,,0
 (on)beschikbaar,,(in)disponible,,,0
@@ -266,7 +264,6 @@ de turnster,,le gymnaste,ze is een turnster,,0
 het spel,spelen,le jeux,ze was de favoriet van de Olympische Spelen,,0
 de stress/de druk,,le stress/la pression,ze had veel stress. Ze was onder druk,,0
 de prestatie,,la performance,ze is de atleet van het jaar door haar prestatie over het hele jaar,,0
-de wetenschapper,wetenshappers/dokters,le scientifique,,,0
 de dokter,,le docteur,ik ben geen doktor,,0
 de weten,,le savoir,ik weet het niet,,0
 het vaccin,vaccins,le vaccin,ze werken over het vaccin tegen covid19,,0
@@ -302,7 +299,7 @@ af en toe,,de temps en temps,,,0
 meestal,,généralement,,,0
 de volwassen,,l’adulte,,,0
 twee keer per maand,,deux fois par mois,,,0
-met (naam),,au téléphone avec,,u spreekt met,0
+met,,au téléphone avec,,u spreekt met,0
 (veel) beterschap,,prompt rétablissement,,,0
 de vraag,,la question,,/!\ Een kwestie van tijd (une question de temps),0
 de aanvraag,,la demande ,,,0
@@ -326,7 +323,7 @@ van tot,,de à,van 1 uur tot 4 uur/van Brussel tot Luik,<départ + déplacement>
 naar,,à (+ lieux + déplacement),,<lieux + déplacement>,0
 in,,à (+ mois/moment/saison/lieu),,devant mois/moments de la journée/saisons/lieux,0
 om,,à (+ heure),,devant heures,0
-alle/alles/al de/aller/allen/allemaal,,tous,,,0
+alle/alles/al de/aller/alleen/allemaal,,tous,,,0
 de herdenking,,la commémoration,,,0
 de slag,,la bataille,,,0
 de congreskolom,,la colonne du congrès,,,0
@@ -355,7 +352,7 @@ de werkdag,,jour ouvrable,,,0
 de wereld,,le monde,,,0
 de oorlog,,la guerre,,,0
 betrokken,,impliqué,Betrokken bij ontwikkelings,,0
-het cadeau/het kado,,le cadeau,Oh een cadeau. Dat had je niet moeten doen!,,0
+het cadeau/het geschenk/het kado,geschenken,le cadeau,de cadeautjes,,0
 de verjaardag,verjaardagen,la date d'aniverssaire,Gelukkige verjaardag! Ik heb iets voor jou!/Gefeliciteerd met je verjaardag!,,0
 eens,,une fois,Toch wel en nog eens proficiat!,,0
 de vriend,vrienden,l'amis,Je vrienden van de klas Nederlands,,0
@@ -405,7 +402,7 @@ de vuilbak,,la poubelle,,,0
 de deur,,la porte,,,0
 het raam,,la fenêtre,,,0
 het bord,,le tableau,,,0
-het wordenboek,,le dictionnaire,,,0
+het woordenboek,,le dictionnaire,,,0
 de kapstok,,le portemanteau,,,0
 de kast,,l'armoire,de kledingkast,,0
 de bezem,bezems,le balai,,pluriel en -s.,0
@@ -505,7 +502,7 @@ bang,,peur,een de meeste mensen zijn er bang van,,0
 het beestje,,l'insecte,het lieveheersbeetje is het mooiste insect.,,0
 de voelspriet,voelsprieten,l'antenne,die voelsprieten gebruikt ze om te voelen en te ruiken,,0
 zuid/noord/oost/west,,sud/nord/est/ouest,deze spin leeft in het zuiden van Amerika.,,0
-de poot,poten,la pate,Zoals alle spinnen heeft ze acht poten.,,0
+de poot,poten,la pate,zoals alle spinnen heeft ze acht poten.,,0
 de buik,,le ventre,de walvis is 24 keer groter dan een olifant.,,0
 de olifant,,l'éléphant,,,0
 lieve,,cher,Lieve Sint !,,0
@@ -516,7 +513,7 @@ de tijd,,le temps,,,0
 de heilig,,le saint,,,0
 Allerheiligen,,Toussaint,Op 1 november is Allerheiligen.,,0
 de staat,,l'état,,,0
-Verenigd koninkrijk,,Royaume Uni,,,0
+Verenigd Koninkrijk,,Royaume Uni,,,0
 tussen,,entre,tussen 8 uur en halfnegen,,0
 meestal,,généralement,,,0
 opnieuw,,à nouveau,hij woont al 10 jaar in België/al 3 jaar opnieuw in Bergen,,0

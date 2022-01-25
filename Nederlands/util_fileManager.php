@@ -130,7 +130,7 @@ function csv_to_object(string $path) : object
         return $data;
 }
 
-function count_commas_per_line(string $path) : void
+function count_commas_per_line(string $path, int $totalCommas) : void
 {
     $myFile = fopen($path, "r");
     if(!$myFile)
@@ -140,9 +140,9 @@ function count_commas_per_line(string $path) : void
     while(!feof($myFile))
     {
         $str = fgets($myFile);
-        $coma = substr_count($str, ',');
-        if($coma != 5)
-            echo 'Numéro de ligne : '.$line.' | Nombre de virgule : '.$coma.'<br>';
+        $comma = substr_count($str, ',');
+        if($comma != $totalCommas)
+            echo 'Numéro de ligne : '.$line.' | Nombre de virgule : '.$comma.'<br>';
     
         $line++;
     }
