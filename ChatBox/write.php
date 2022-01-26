@@ -12,6 +12,7 @@ function chatbox_send_message() : void
         fwrite($fic, $text);
         fclose($fic);
         unset($_POST, $text);
+        $_POST = array();
     }
 }
 
@@ -25,6 +26,7 @@ function chatbox_logout_message() : void
         fwrite($fic, $text);
         fclose($fic);
         unset($_POST, $text);
+        $_POST = array();
     }
 }
 
@@ -38,7 +40,7 @@ function chatbox_users_online() : void
             fwrite($fic, $text);
             fclose($fic);
             unset($_POST, $text);
-
+            $_POST = array();
         }
 }
 

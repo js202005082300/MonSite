@@ -2,8 +2,11 @@
 .welcome{float:left;}
 .logout{float:right;}
 
+/* background-color */
+.chathead{background:linear-gradient(rgb(123, 193, 227), white);}
+
 /* Borders */
-.chatbox, .chatusers{border:1px solid;}
+.chathead, .chatbox, .chatusers{border:1px solid;}
 
 /* text-align */
 .chatbox{text-align:left;}
@@ -35,11 +38,12 @@ a:hover{text-decoration:underline;}
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
     grid-template-areas:"menu menu menu"
+                        "chathead chathead chathead"
                         "chatusers chatbox chatbox"
                         "message message message";
-
 }
 .menu{grid-area:menu;}
+.chathead{grid-area:chathead;}
 .chatbox{grid-area:chatbox;}
 .message{grid-area:message;}
 
@@ -49,6 +53,7 @@ a:hover{text-decoration:underline;}
     {
         grid-template-columns: 1fr;
 		grid-template-areas:"menu"
+                            "chathead"
 							"chatbox"
                             "message"
                             "chatusers";

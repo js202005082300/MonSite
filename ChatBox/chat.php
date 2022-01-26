@@ -32,13 +32,17 @@ chatbox_send_message();
 
             <p class="logout"><a id="exit" href="../index.php?action=logout">Exit Chat</a></p>
         </div>
+
+        <div class="chathead">
+            <p>Petite chatBox : Simple d'utilisation</p>
+        </div>
         
         <div class="chatbox">
-            <?php require 'chatbox.php'; ?>
+            <?php require_once 'chatbox.php'; ?>
         </div>
 
         <div class="chatusers">
-            <?php require 'chatusers.php'; ?>
+            <?php require_once 'chatusers.php'; ?>
         </div>
 
         <div class="message">
