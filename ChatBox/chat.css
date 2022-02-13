@@ -3,22 +3,23 @@
 .logout{float:right;}
 
 /* background-color */
-.chathead{background:linear-gradient(rgb(123, 193, 227), white);}
+.chathead{background:linear-gradient(#7bc1e3, white);}
+/* .chatusers{background-color:yellow;} */
 
 /* Borders */
-.chathead, .chatbox, .chatusers{border:1px solid;}
+.chathead, .chatbox, .chatusers, .message{border:1px solid;}
 
 /* text-align */
 .chatbox{text-align:left;}
 
-/* Padding */
-.chatbox, .chatusers, .message{padding:10px;}
+/* Bordures et contours */
+.chatbox, .chatusers, .message, .message_user{padding:10px; margin-bottom:25px;}
+.message_user{padding:0px;margin:0px;outline-offset:100px;}
 
-/* Margin */
-.chatbox, .chatusers, .message{margin-bottom:25px;}
-
-/* Width */
+/* Tailles */
 .wrapper{width:500px;height:500px;}
+.message_user{width:310px;}
+.delete_message, .valid_message{width:70px;}
 
 /* Hover */
 a{text-decoration:none;}

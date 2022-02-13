@@ -16,8 +16,7 @@ chatbox_send_message();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript"
-    src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <link rel="stylesheet" href="chat.css">
     <title>Chat module</title>
 
@@ -47,7 +46,8 @@ chatbox_send_message();
 
         <div class="message">
             <form class="message_form" name="message_form" action="" method="post">
-                <input type="text" name="message_user" class="message_user" size="55" maxlength="80">
+                <input type="text" name="message_user" class="message_user" maxlength="80">
+                <input type="reset" name="delete_message" class="delete_message" value="effacer">
                 <input type="submit" name="valid_message" class="valid_message" value="valider">
             </form>
         </div>
