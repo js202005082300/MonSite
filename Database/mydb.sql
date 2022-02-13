@@ -57,8 +57,9 @@ CREATE TABLE IF NOT EXISTS `table_dht`(
 
 INSERT INTO `table_users`(`user_name`, `user_password`, `user_email`, `user_admin`)
 VALUES
-('SamAdmin', '$2y$10$Fdlb6svlSAJKxVEWtK.UjOUz9FZg5G17C2Ekt6MrV/AsrXFnIeM8a', 'js201910271235@outlook.com', 1),
--- ('Guest01', '$2y$10$2S1yQapCZG9t8gA9yoRp9.c3W5VhjaIdnuKlwJ8qOgreqksFIPbPm', 'Guest01@test.com', 0),
-('Guest02', '$2y$10$i2FLupW7brb5Sx0a5TCUFO0NOKqgE0GbILUwOw6yE4aZdu5bMzHoO', 'Guest02@test.com', 0);
+('SamAdmin', '$2y$10$5/IZ97IIHbs7DRf06hXNw.7lvzOVOyXlXlWeHK8/VSMvl4JnJ6Upy', 'js201910271235@outlook.com', 1),
+('Guest01', '$2y$10$CLtld4kqSonp3AY3xV8h3eAEa5EIaslRSwlcSOgJf6IjTlsT/FOGS', 'Guest01@test.com', 0),
+('Guest02', '$2y$10$RwanNiYsrAyEGGcUyeQ64ePRAHjyW7zaAcLntjboxrL9eTekN7AHW', 'Guest02@test.com', 0);
+
 
 -- SOURCE C:/_Projets/MyWAMP/apache/htdocs/MonSiteProd/Database/mydb.sql;
