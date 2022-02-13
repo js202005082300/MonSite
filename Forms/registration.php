@@ -1,6 +1,6 @@
 <?php
 
-if(is_admin()):
+if(is_logged()):
 require '../Database/Database.php';
 
 $different_password = 0;
@@ -101,7 +101,7 @@ if((!$different_password && !$name_exists && !$email_exists) && ($username && $e
 
     <p><a href="../index.php">&laquo; Retour à l'acceuil</a></p>
 
-<?php if(is_admin()):?>
+<?php if(is_logged()):?>
 </body>
 </html>
 <?php endif; ?>
