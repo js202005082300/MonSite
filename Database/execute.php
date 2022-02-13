@@ -1,6 +1,6 @@
 <?php 
-    require '../util.php';
-    init_php_session();
+require '../util.php';
+init_php_session();
 
 if(is_admin()): ?>
 

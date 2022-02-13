@@ -1,4 +1,6 @@
 <?php
+require '../util.php';
+init_php_session();
 
 if(is_logged()):
 
