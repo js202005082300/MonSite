@@ -2,7 +2,7 @@
     require '../util.php';
     init_php_session();
 
-if(is_logged()): ?>
+if(is_admin()): ?>
 
 <?php
     require 'extract.php';
@@ -23,3 +23,5 @@ if(is_logged()): ?>
 </form>
 
 <?php endif; ?>
+
+<p><a href="../index.php">&laquo; Retour à l'acceuil</a></p>

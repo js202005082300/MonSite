@@ -62,5 +62,6 @@
         );
     </script>
 
+    <p><a href="../index.php">&laquo; Retour à l'acceuil</a></p>
 </body>
 </html>

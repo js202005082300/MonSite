@@ -1,5 +1,7 @@
 <?php
 
+if(is_logged()):
+
 require '../Database/Database.php';
 
 if(isset($_POST['valid_client']))
@@ -72,7 +74,11 @@ $sql = 'INSERT INTO table_clients (client_firstname, client_lastname, client_gen
 
 		</fieldset>
 	</form>
+<?php endif; ?>
 
     <p><a href="../index.php">&laquo; Retour à l'acceuil</a></p>
+
+<?php if(is_logged()):?>
 </body>
 </html>
+<?php endif; ?>

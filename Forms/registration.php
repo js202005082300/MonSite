@@ -1,6 +1,6 @@
 <?php
-// unset($_POST);
 
+if(is_admin()):
 require '../Database/Database.php';
 
 $different_password = 0;
@@ -97,7 +97,11 @@ if((!$different_password && !$name_exists && !$email_exists) && ($username && $e
 
 		</fieldset>
 	</form>
+<?php endif; ?>
 
     <p><a href="../index.php">&laquo; Retour à l'acceuil</a></p>
+
+<?php if(is_admin()):?>
 </body>
 </html>
+<?php endif; ?>
