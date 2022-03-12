@@ -26,7 +26,7 @@ init_php_session();
 
     <main class="item">
         <h2>Bienvenue</h2>
-        <p>Je suis une page web développée en Php.</p>
+        <p>Je suis une page web développée en Php</p>
         <?php if(is_logged()): ?>
             <section id="Message">
                 <details>
