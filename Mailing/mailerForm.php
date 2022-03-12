@@ -11,7 +11,8 @@ if (isset($_POST["valid_mail"]))
                 $message = $_POST['mail_message'];
                 
                 $headers = "Content-Type: text/plain; charset=utf-8\r\n";
-                $headers .= "From: js202002080712@gmail.com\r\n";
+                $headers .= "From: info@samueljacquet.be\r\n";
+                // $headers .= "From: js202002080712@gmail.com\r\n";
                 
                 if(mail($to, $subject, $message, $headers))
                     echo 'Envoye !';
