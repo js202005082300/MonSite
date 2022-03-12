@@ -20,7 +20,7 @@ init_php_session();
 	<header class="item">
         <!-- <h1>Samuel Jacquet</h1> -->
         <div class="couverture">
-        <img alt="Jap" src="Documents/images/mf03.jpg">
+        <!-- <img alt="Jap" src="Documents/images/mf03.jpg"> -->
         </div>
 	</header>
 

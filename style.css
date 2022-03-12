@@ -18,8 +18,8 @@ a{text-decoration:none;}
 a:hover{text-decoration:underline;}
 
 /* Background */
-header{background-image: url("Documents/images/mf03.jpg"); /*no-repeat top center;
-    background-size: cover; */
+header{background-image: url("Documents/images/mf03.jpg") no-repeat top center;
+    background-size: cover;
 }
 
 /* Media Queries */
