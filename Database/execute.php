@@ -8,10 +8,7 @@ if(is_admin()): ?>
     require 'extract.php';
 
     if(isset($_POST['valid_execute']))
-    {
         $sql = run_sql_file("mydb.sql");
-        print_r($sql);
-    }
 ?>
 
 <form method="post">
