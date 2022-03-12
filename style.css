@@ -1,30 +1,37 @@
 /* Borders */
-header{border:1px solid;}
-main{border:1px solid;}
+main, aside{border:1px solid;}
+footer{border-top:2px #CCC solid;}
+
+/* Text-align*/
+footer{text-align:center;}
 
 /* Padding */
-header, main{padding:5px;}
+header{padding:250px;}
+main, aside{padding:5px;}
 
 /* Margin */
 body{margin:15px;}
-header, main{margin:5px;}
+header, main, aside{margin:5px;}
 
 /* Hover */
 a{text-decoration:none;}
 a:hover{text-decoration:underline;}
 
+/* Background */
+header{background: url("Documents/images/mf03.webp") no-repeat top center;background-size: cover;}
+
 /* Media Queries */
 .container{
     display:grid;
     grid-template-columns:1fr 1fr;
-    grid-template-areas:"header main"
-                        "header main"
-                        "header aside";
+    grid-template-areas:"header header"
+                        "main aside"
+                        "footer footer";
 }
 header{grid-area:header;}
 main{grid-area:main;}
-footer{grid-area:footer;}
 aside{grid-area:aside;}
+footer{grid-area:footer;}
 @media(max-width:600px), screen and (orientation: portrait)
 {
     .container
@@ -36,3 +43,4 @@ aside{grid-area:aside;}
                             "footer";
     }
 }
+@media(min-width:600px), screen and (orientation: portrait)

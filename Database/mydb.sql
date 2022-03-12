@@ -1,7 +1,9 @@
--- DROP DATABASE IF EXISTS `MyDB`;
--- CREATE DATABASE IF NOT EXISTS `MyDB`;
--- USE `MyDB`;
-USE `u870391923_MyDB`;
+DROP DATABASE IF EXISTS `MyDB`;
+CREATE DATABASE IF NOT EXISTS `MyDB`;
+USE `MyDB`;
+-- DROP DATABASE IF EXISTS `u870391923_MyDB`;
+-- CREATE DATABASE IF NOT EXISTS `u870391923_MyDB`;
+-- USE `u870391923_MyDB`;
 
 DROP TABLE IF EXISTS `table_users`;
 CREATE TABLE IF NOT EXISTS `table_users`(
@@ -57,9 +59,9 @@ CREATE TABLE IF NOT EXISTS `table_dht`(
 
 INSERT INTO `table_users`(`user_name`, `user_password`, `user_email`, `user_admin`)
 VALUES
-('SamAdmin', '$2y$10$5/IZ97IIHbs7DRf06hXNw.7lvzOVOyXlXlWeHK8/VSMvl4JnJ6Upy', 'js201910271235@outlook.com', 1),
-('Guest01', '$2y$10$CLtld4kqSonp3AY3xV8h3eAEa5EIaslRSwlcSOgJf6IjTlsT/FOGS', 'Guest01@test.com', 0),
-('Guest02', '$2y$10$RwanNiYsrAyEGGcUyeQ64ePRAHjyW7zaAcLntjboxrL9eTekN7AHW', 'Guest02@test.com', 0);
+('SamAdmin','$2y$10$uwgGIluTgwBlFdx1u2iSKOAjutS4Urx8opffWukBZ.RDu9zppcGOq', 'js201910271235@outlook.com', 1),
+('Guest01', '$2y$10$Khz/p4atXc39ndOwAqMRyuzYNhqDFWnK4VxiUAgMbqmGaEpzNFhIC', 'Guest01@test.com', 0),
+('Guest02', '$2y$10$iie5OvGIG9KiUHxSI6Sgf.GvCY36Wp.jEo5FGYGxV6j1frmCqsbn.', 'Guest02@test.com', 0);
 
 
 -- SOURCE C:/_Projets/MyWAMP/apache/htdocs/MonSiteProd/Database/mydb.sql;
