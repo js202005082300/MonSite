@@ -11,14 +11,13 @@ if(is_admin()): ?>
     {
         $sql = run_sql_file("mydb.sql");
         print_r($sql);
-        echo "<p><a href='../index.php'>&laquo; Retour à l'acceuil</a></p>";
     }
 ?>
 
 <form method="post">
         <fieldset form="source_form">
         <legend>Bouton d'exécution MySQL</legend>
-<input type="submit" name="valid_execute" value="Requête execute" />
+<input type="submit" name="valid_execute" value="Mettre-à-jour DB Sql" />
         </fieldset>
 </form>
 
