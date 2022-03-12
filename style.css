@@ -18,7 +18,9 @@ a{text-decoration:none;}
 a:hover{text-decoration:underline;}
 
 /* Background */
-header{background: url("Documents/images/mf03.webp") no-repeat top center;background-size: cover;}
+header{background: url("Documents/images/mf03.webp") no-repeat top center;
+    /* background-size: cover; */
+}
 
 /* Media Queries */
 .container{

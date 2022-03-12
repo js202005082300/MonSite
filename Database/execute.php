@@ -13,7 +13,7 @@ if(is_admin()): ?>
 
 <form method="post">
         <fieldset form="source_form">
-        <legend>Bouton d'exécution MySQL</legend>
+        <legend>Bouton d'exécution Sql</legend>
 <input type="submit" name="valid_execute" value="Mettre-à-jour la base de données Sql" />
         </fieldset>
 </form>
