@@ -19,7 +19,9 @@ init_php_session();
 <body class="container">
 	<header class="item">
         <!-- <h1>Samuel Jacquet</h1> -->
-        <div class="couverture"></div>
+        <div class="couverture">
+        <img alt="Jap" src="Documents/images/mf03.webp">
+        </div>
 	</header>
 
     <main class="item">
