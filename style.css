@@ -6,7 +6,6 @@ footer{border-top:2px #CCC solid;}
 footer{text-align:center;}
 
 /* Padding */
-header{padding:250px;}
 main, aside{padding:5px;}
 
 /* Margin */
@@ -18,9 +17,14 @@ a{text-decoration:none;}
 a:hover{text-decoration:underline;}
 
 /* Background */
-header{
-    background: url(".\\Documents\\images\\mf03.webp") no-repeat top center;
+/* header{
+    background: url("Documents/images/mf03.webp") no-repeat top center;
     background-size: cover;
+} */
+img{
+    max-width: 100%;
+    width: 150%;
+    padding:0px;
 }
 
 /* Media Queries */
