@@ -110,8 +110,8 @@ init_php_session();
 
     </script>
     
-    <footer>        
+    <!-- <footer>        
         <p><time datetime="2022-03-12"></time>Copyright &copy; 2022 : Aucuns droits réservés.</p>
-    </footer>
+    </footer> -->
 </body>
 </html>
