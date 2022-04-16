@@ -24,7 +24,7 @@ init_php_session();
 
 
         <!-- DEVELOPPEMENT -->
-        <nav>
+        <!-- <nav>
             <div class="navbar">
 
                 <div class="nav-container">
@@ -54,13 +54,13 @@ init_php_session();
                 </div>
                 
             </div>
-        </nav>
+        </nav> -->
         <!-- FIN DEVELOPPEMENT -->
 
 
 
 
-        <div class="couverture"><img alt="Jap" src="Documents/images/hogancampbw.jpg"></div>
+        <!-- <div class="couverture"><img alt="Jap" src="Documents/images/hogancampbw.jpg"></div> -->
 	</header>
 
     <main class="item">
