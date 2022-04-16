@@ -17,11 +17,50 @@ init_php_session();
     <title>Samuel Jacquet</title>
 </head>
 <body class="container">
-	<header class="item">
+
+	<header>
         <!-- <h1>Samuel Jacquet</h1> -->
-        <div class="couverture">
-            <img alt="Jap" src="Documents/images/mf03.jpg">
-        </div>
+
+
+
+        <!-- DEVELOPPEMENT -->
+        <nav>
+            <div class="navbar">
+
+                <div class="nav-container">
+
+                    <input class="checkbox" type="checkbox" name="" id="" />
+
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+
+                    <div class="logo">
+                        <h1>SAMUEL JACQUET</h1>
+                        <span class="line line4"></span>
+                    </div>
+
+                    <div class="menu-items">
+                        <li class="menu-item"><a href="#">Home</a></li>
+                        <li class="menu-item"><a href="#">about</a></li>
+                        <li class="menu-item"><a href="#">DreamPics</a></li>
+                        <li class="menu-item"><a href="#">blogs</a></li>
+                        <li class="menu-item"><a href="#">msn</a></li>
+                        <li class="menu-item"><a href="#">contact</a></li>
+                    </div>
+
+                </div>
+                
+            </div>
+        </nav>
+        <!-- FIN DEVELOPPEMENT -->
+
+
+
+
+        <div class="couverture"><img alt="Jap" src="Documents/images/hogancampbw.jpg"></div>
 	</header>
 
     <main class="item">
@@ -66,9 +105,13 @@ init_php_session();
         </section>
         
     </aside>
+
+    <script>
+
+    </script>
     
     <footer>        
-        <!-- <p><time datetime="2022-03-12"></time>Copyright &copy; 2022</p> -->
+        <p><time datetime="2022-03-12"></time>Copyright &copy; 2022 : Aucuns droits réservés.</p>
     </footer>
 </body>
 </html>
